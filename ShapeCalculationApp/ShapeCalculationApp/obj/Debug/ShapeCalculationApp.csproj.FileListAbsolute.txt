@@ -1,0 +1,11 @@
+D:\github repo\ShapeCalculator\ShapeCalculationApp\ShapeCalculationApp\bin\Debug\ShapeCalculationApp.exe.config
+D:\github repo\ShapeCalculator\ShapeCalculationApp\ShapeCalculationApp\bin\Debug\ShapeCalculationApp.exe
+D:\github repo\ShapeCalculator\ShapeCalculationApp\ShapeCalculationApp\bin\Debug\ShapeCalculationApp.pdb
+D:\github repo\ShapeCalculator\ShapeCalculationApp\ShapeCalculationApp\obj\Debug\ShapeCalculationApp.csproj.AssemblyReference.cache
+D:\github repo\ShapeCalculator\ShapeCalculationApp\ShapeCalculationApp\obj\Debug\ShapeCalculationApp.Form1.resources
+D:\github repo\ShapeCalculator\ShapeCalculationApp\ShapeCalculationApp\obj\Debug\ShapeCalculationApp.Properties.Resources.resources
+D:\github repo\ShapeCalculator\ShapeCalculationApp\ShapeCalculationApp\obj\Debug\ShapeCalculationApp.csproj.GenerateResource.cache
+D:\github repo\ShapeCalculator\ShapeCalculationApp\ShapeCalculationApp\obj\Debug\ShapeCalculationApp.csproj.CoreCompileInputs.cache
+D:\github repo\ShapeCalculator\ShapeCalculationApp\ShapeCalculationApp\obj\Debug\ShapeCalculationApp.exe
+D:\github repo\ShapeCalculator\ShapeCalculationApp\ShapeCalculationApp\obj\Debug\ShapeCalculationApp.pdb
+D:\github repo\ShapeCalculator\ShapeCalculationApp\ShapeCalculationApp\obj\Debug\ShapeCalculationApp.ResultCalculation.resources
