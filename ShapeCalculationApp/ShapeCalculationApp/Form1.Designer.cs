@@ -125,7 +125,7 @@ namespace ShapeCalculationApp
             this.CirclePanel1.Controls.Add(this.label5);
             this.CirclePanel1.Location = new System.Drawing.Point(0, 0);
             this.CirclePanel1.Name = "CirclePanel1";
-            this.CirclePanel1.Size = new System.Drawing.Size(243, 62);
+            this.CirclePanel1.Size = new System.Drawing.Size(243, 82);
             this.CirclePanel1.TabIndex = 5;
             this.CirclePanel1.Visible = false;
             // 

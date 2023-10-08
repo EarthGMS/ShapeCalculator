@@ -73,8 +73,6 @@ namespace ShapeCalculationApp
         private void Triangle1Button_Click(object sender, EventArgs e)
         {
             TrianglePanel1.Visible = true;
-            SquarePanel1.Visible = false;
-            CirclePanel1.Visible = false;
             ShapeChoose1 = ShapeMode1.Triangle1;
         }
 
@@ -104,8 +102,6 @@ namespace ShapeCalculationApp
 
         private void Circle1Button_Click(object sender, EventArgs e)
         {
-            SquarePanel1.Visible = false;
-            TrianglePanel1.Visible = false;
             CirclePanel1.Visible = true;
             ShapeChoose1 = ShapeMode1.Circle1;
         }
