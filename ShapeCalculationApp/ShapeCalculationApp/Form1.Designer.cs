@@ -31,12 +31,15 @@ namespace ShapeCalculationApp
         {
             this.DescText = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.SquarePanel1 = new System.Windows.Forms.Panel();
             this.TrianglePanel1 = new System.Windows.Forms.Panel();
+            this.CirclePanel1 = new System.Windows.Forms.Panel();
+            this.CircleRadius1 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.TriangleHeight1 = new System.Windows.Forms.TextBox();
             this.TriangleBase1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.SquarePanel1 = new System.Windows.Forms.Panel();
             this.WidthInput1 = new System.Windows.Forms.TextBox();
             this.HeightInput1 = new System.Windows.Forms.TextBox();
             this.height = new System.Windows.Forms.Label();
@@ -47,12 +50,15 @@ namespace ShapeCalculationApp
             this.Shape2Text = new System.Windows.Forms.Label();
             this.Circle2Button = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.SquarePanel2 = new System.Windows.Forms.Panel();
+            this.CirclePanel2 = new System.Windows.Forms.Panel();
+            this.CircleRadius2 = new System.Windows.Forms.TextBox();
+            this.RadiusText = new System.Windows.Forms.Label();
             this.TrianglePanel2 = new System.Windows.Forms.Panel();
             this.TriangleHeight2 = new System.Windows.Forms.TextBox();
             this.TriangleBase2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.SquarePanel2 = new System.Windows.Forms.Panel();
             this.HeightInput2 = new System.Windows.Forms.TextBox();
             this.WidthInput2 = new System.Windows.Forms.TextBox();
             this.height2 = new System.Windows.Forms.Label();
@@ -62,11 +68,13 @@ namespace ShapeCalculationApp
             this.Triangle2Button = new System.Windows.Forms.Button();
             this.Square2Button = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            this.TrianglePanel1.SuspendLayout();
             this.SquarePanel1.SuspendLayout();
+            this.TrianglePanel1.SuspendLayout();
+            this.CirclePanel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.SquarePanel2.SuspendLayout();
+            this.CirclePanel2.SuspendLayout();
             this.TrianglePanel2.SuspendLayout();
+            this.SquarePanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // DescText
@@ -81,23 +89,61 @@ namespace ShapeCalculationApp
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.TrianglePanel1);
             this.panel1.Controls.Add(this.SquarePanel1);
             this.panel1.Location = new System.Drawing.Point(27, 100);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(319, 288);
             this.panel1.TabIndex = 2;
             // 
+            // SquarePanel1
+            // 
+            this.SquarePanel1.Controls.Add(this.TrianglePanel1);
+            this.SquarePanel1.Controls.Add(this.WidthInput1);
+            this.SquarePanel1.Controls.Add(this.HeightInput1);
+            this.SquarePanel1.Controls.Add(this.height);
+            this.SquarePanel1.Controls.Add(this.width1);
+            this.SquarePanel1.Location = new System.Drawing.Point(34, 16);
+            this.SquarePanel1.Name = "SquarePanel1";
+            this.SquarePanel1.Size = new System.Drawing.Size(243, 83);
+            this.SquarePanel1.TabIndex = 3;
+            // 
             // TrianglePanel1
             // 
+            this.TrianglePanel1.Controls.Add(this.CirclePanel1);
             this.TrianglePanel1.Controls.Add(this.TriangleHeight1);
             this.TrianglePanel1.Controls.Add(this.TriangleBase1);
             this.TrianglePanel1.Controls.Add(this.label3);
             this.TrianglePanel1.Controls.Add(this.label4);
-            this.TrianglePanel1.Location = new System.Drawing.Point(31, 16);
+            this.TrianglePanel1.Location = new System.Drawing.Point(0, 0);
             this.TrianglePanel1.Name = "TrianglePanel1";
-            this.TrianglePanel1.Size = new System.Drawing.Size(243, 110);
+            this.TrianglePanel1.Size = new System.Drawing.Size(243, 82);
             this.TrianglePanel1.TabIndex = 5;
+            // 
+            // CirclePanel1
+            // 
+            this.CirclePanel1.Controls.Add(this.CircleRadius1);
+            this.CirclePanel1.Controls.Add(this.label5);
+            this.CirclePanel1.Location = new System.Drawing.Point(0, 0);
+            this.CirclePanel1.Name = "CirclePanel1";
+            this.CirclePanel1.Size = new System.Drawing.Size(243, 62);
+            this.CirclePanel1.TabIndex = 5;
+            this.CirclePanel1.Visible = false;
+            // 
+            // CircleRadius1
+            // 
+            this.CircleRadius1.Location = new System.Drawing.Point(80, 20);
+            this.CircleRadius1.Name = "CircleRadius1";
+            this.CircleRadius1.Size = new System.Drawing.Size(109, 20);
+            this.CircleRadius1.TabIndex = 2;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(20, 23);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(54, 13);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "RADIUS :";
             // 
             // TriangleHeight1
             // 
@@ -130,17 +176,6 @@ namespace ShapeCalculationApp
             this.label4.Size = new System.Drawing.Size(41, 13);
             this.label4.TabIndex = 0;
             this.label4.Text = "BASE :";
-            // 
-            // SquarePanel1
-            // 
-            this.SquarePanel1.Controls.Add(this.WidthInput1);
-            this.SquarePanel1.Controls.Add(this.HeightInput1);
-            this.SquarePanel1.Controls.Add(this.height);
-            this.SquarePanel1.Controls.Add(this.width1);
-            this.SquarePanel1.Location = new System.Drawing.Point(34, 16);
-            this.SquarePanel1.Name = "SquarePanel1";
-            this.SquarePanel1.Size = new System.Drawing.Size(243, 110);
-            this.SquarePanel1.TabIndex = 3;
             // 
             // WidthInput1
             // 
@@ -192,6 +227,7 @@ namespace ShapeCalculationApp
             this.Circle1Button.TabIndex = 5;
             this.Circle1Button.Text = "CIRCLE";
             this.Circle1Button.UseVisualStyleBackColor = true;
+            this.Circle1Button.Click += new System.EventHandler(this.Circle1Button_Click);
             // 
             // Shape1
             // 
@@ -221,9 +257,11 @@ namespace ShapeCalculationApp
             this.Circle2Button.TabIndex = 10;
             this.Circle2Button.Text = "CIRCLE";
             this.Circle2Button.UseVisualStyleBackColor = true;
+            this.Circle2Button.Click += new System.EventHandler(this.Circle2Button_Click);
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.CirclePanel2);
             this.panel2.Controls.Add(this.TrianglePanel2);
             this.panel2.Controls.Add(this.SquarePanel2);
             this.panel2.Location = new System.Drawing.Point(413, 100);
@@ -231,16 +269,31 @@ namespace ShapeCalculationApp
             this.panel2.Size = new System.Drawing.Size(319, 288);
             this.panel2.TabIndex = 7;
             // 
-            // SquarePanel2
+            // CirclePanel2
             // 
-            this.SquarePanel2.Controls.Add(this.HeightInput2);
-            this.SquarePanel2.Controls.Add(this.WidthInput2);
-            this.SquarePanel2.Controls.Add(this.height2);
-            this.SquarePanel2.Controls.Add(this.width2);
-            this.SquarePanel2.Location = new System.Drawing.Point(36, 16);
-            this.SquarePanel2.Name = "SquarePanel2";
-            this.SquarePanel2.Size = new System.Drawing.Size(243, 110);
-            this.SquarePanel2.TabIndex = 2;
+            this.CirclePanel2.Controls.Add(this.CircleRadius2);
+            this.CirclePanel2.Controls.Add(this.RadiusText);
+            this.CirclePanel2.Location = new System.Drawing.Point(36, 16);
+            this.CirclePanel2.Name = "CirclePanel2";
+            this.CirclePanel2.Size = new System.Drawing.Size(243, 62);
+            this.CirclePanel2.TabIndex = 4;
+            this.CirclePanel2.Visible = false;
+            // 
+            // CircleRadius2
+            // 
+            this.CircleRadius2.Location = new System.Drawing.Point(80, 20);
+            this.CircleRadius2.Name = "CircleRadius2";
+            this.CircleRadius2.Size = new System.Drawing.Size(109, 20);
+            this.CircleRadius2.TabIndex = 2;
+            // 
+            // RadiusText
+            // 
+            this.RadiusText.AutoSize = true;
+            this.RadiusText.Location = new System.Drawing.Point(20, 23);
+            this.RadiusText.Name = "RadiusText";
+            this.RadiusText.Size = new System.Drawing.Size(54, 13);
+            this.RadiusText.TabIndex = 0;
+            this.RadiusText.Text = "RADIUS :";
             // 
             // TrianglePanel2
             // 
@@ -250,7 +303,7 @@ namespace ShapeCalculationApp
             this.TrianglePanel2.Controls.Add(this.label2);
             this.TrianglePanel2.Location = new System.Drawing.Point(36, 16);
             this.TrianglePanel2.Name = "TrianglePanel2";
-            this.TrianglePanel2.Size = new System.Drawing.Size(243, 110);
+            this.TrianglePanel2.Size = new System.Drawing.Size(243, 82);
             this.TrianglePanel2.TabIndex = 4;
             // 
             // TriangleHeight2
@@ -284,6 +337,17 @@ namespace ShapeCalculationApp
             this.label2.Size = new System.Drawing.Size(41, 13);
             this.label2.TabIndex = 0;
             this.label2.Text = "BASE :";
+            // 
+            // SquarePanel2
+            // 
+            this.SquarePanel2.Controls.Add(this.HeightInput2);
+            this.SquarePanel2.Controls.Add(this.WidthInput2);
+            this.SquarePanel2.Controls.Add(this.height2);
+            this.SquarePanel2.Controls.Add(this.width2);
+            this.SquarePanel2.Location = new System.Drawing.Point(36, 16);
+            this.SquarePanel2.Name = "SquarePanel2";
+            this.SquarePanel2.Size = new System.Drawing.Size(243, 83);
+            this.SquarePanel2.TabIndex = 2;
             // 
             // HeightInput2
             // 
@@ -377,15 +441,19 @@ namespace ShapeCalculationApp
             this.Name = "Form1";
             this.Text = "Shape Calculator App";
             this.panel1.ResumeLayout(false);
-            this.TrianglePanel1.ResumeLayout(false);
-            this.TrianglePanel1.PerformLayout();
             this.SquarePanel1.ResumeLayout(false);
             this.SquarePanel1.PerformLayout();
+            this.TrianglePanel1.ResumeLayout(false);
+            this.TrianglePanel1.PerformLayout();
+            this.CirclePanel1.ResumeLayout(false);
+            this.CirclePanel1.PerformLayout();
             this.panel2.ResumeLayout(false);
-            this.SquarePanel2.ResumeLayout(false);
-            this.SquarePanel2.PerformLayout();
+            this.CirclePanel2.ResumeLayout(false);
+            this.CirclePanel2.PerformLayout();
             this.TrianglePanel2.ResumeLayout(false);
             this.TrianglePanel2.PerformLayout();
+            this.SquarePanel2.ResumeLayout(false);
+            this.SquarePanel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -425,6 +493,12 @@ namespace ShapeCalculationApp
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button Triangle2Button;
         private System.Windows.Forms.Button Square2Button;
+        private System.Windows.Forms.Panel CirclePanel2;
+        public System.Windows.Forms.TextBox CircleRadius2;
+        private System.Windows.Forms.Label RadiusText;
+        private System.Windows.Forms.Panel CirclePanel1;
+        public System.Windows.Forms.TextBox CircleRadius1;
+        private System.Windows.Forms.Label label5;
     }
 }
 
