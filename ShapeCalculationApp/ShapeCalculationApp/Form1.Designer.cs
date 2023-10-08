@@ -31,30 +31,42 @@ namespace ShapeCalculationApp
         {
             this.DescText = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.TrianglePanel1 = new System.Windows.Forms.Panel();
+            this.TriangleHeight1 = new System.Windows.Forms.TextBox();
+            this.TriangleBase1 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.SquarePanel1 = new System.Windows.Forms.Panel();
+            this.WidthInput1 = new System.Windows.Forms.TextBox();
+            this.HeightInput1 = new System.Windows.Forms.TextBox();
+            this.height = new System.Windows.Forms.Label();
+            this.width1 = new System.Windows.Forms.Label();
             this.Square1Button = new System.Windows.Forms.Button();
             this.Circle1Button = new System.Windows.Forms.Button();
             this.Shape1 = new System.Windows.Forms.Label();
             this.Shape2Text = new System.Windows.Forms.Label();
             this.Circle2Button = new System.Windows.Forms.Button();
-            this.Triangle2Button = new System.Windows.Forms.Button();
-            this.Square2Button = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.SquarePanel2 = new System.Windows.Forms.Panel();
+            this.TrianglePanel2 = new System.Windows.Forms.Panel();
+            this.TriangleHeight2 = new System.Windows.Forms.TextBox();
+            this.TriangleBase2 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.HeightInput2 = new System.Windows.Forms.TextBox();
+            this.WidthInput2 = new System.Windows.Forms.TextBox();
+            this.height2 = new System.Windows.Forms.Label();
+            this.width2 = new System.Windows.Forms.Label();
             this.CalculateButton = new System.Windows.Forms.Button();
             this.Triangle1Button = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.width2 = new System.Windows.Forms.Label();
-            this.height2 = new System.Windows.Forms.Label();
-            this.height = new System.Windows.Forms.Label();
-            this.width1 = new System.Windows.Forms.Label();
-            this.WidthInput2 = new System.Windows.Forms.TextBox();
-            this.HeightInput2 = new System.Windows.Forms.TextBox();
-            this.HeightInput1 = new System.Windows.Forms.TextBox();
-            this.WidthInput1 = new System.Windows.Forms.TextBox();
+            this.Triangle2Button = new System.Windows.Forms.Button();
+            this.Square2Button = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
+            this.TrianglePanel1.SuspendLayout();
+            this.SquarePanel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
+            this.SquarePanel2.SuspendLayout();
+            this.TrianglePanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // DescText
@@ -69,11 +81,98 @@ namespace ShapeCalculationApp
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.panel4);
+            this.panel1.Controls.Add(this.TrianglePanel1);
+            this.panel1.Controls.Add(this.SquarePanel1);
             this.panel1.Location = new System.Drawing.Point(27, 100);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(319, 288);
             this.panel1.TabIndex = 2;
+            // 
+            // TrianglePanel1
+            // 
+            this.TrianglePanel1.Controls.Add(this.TriangleHeight1);
+            this.TrianglePanel1.Controls.Add(this.TriangleBase1);
+            this.TrianglePanel1.Controls.Add(this.label3);
+            this.TrianglePanel1.Controls.Add(this.label4);
+            this.TrianglePanel1.Location = new System.Drawing.Point(31, 16);
+            this.TrianglePanel1.Name = "TrianglePanel1";
+            this.TrianglePanel1.Size = new System.Drawing.Size(243, 110);
+            this.TrianglePanel1.TabIndex = 5;
+            // 
+            // TriangleHeight1
+            // 
+            this.TriangleHeight1.Location = new System.Drawing.Point(80, 49);
+            this.TriangleHeight1.Name = "TriangleHeight1";
+            this.TriangleHeight1.Size = new System.Drawing.Size(109, 20);
+            this.TriangleHeight1.TabIndex = 3;
+            // 
+            // TriangleBase1
+            // 
+            this.TriangleBase1.Location = new System.Drawing.Point(80, 20);
+            this.TriangleBase1.Name = "TriangleBase1";
+            this.TriangleBase1.Size = new System.Drawing.Size(109, 20);
+            this.TriangleBase1.TabIndex = 2;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(20, 52);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(54, 13);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "HEIGHT :";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(20, 23);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(41, 13);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "BASE :";
+            // 
+            // SquarePanel1
+            // 
+            this.SquarePanel1.Controls.Add(this.WidthInput1);
+            this.SquarePanel1.Controls.Add(this.HeightInput1);
+            this.SquarePanel1.Controls.Add(this.height);
+            this.SquarePanel1.Controls.Add(this.width1);
+            this.SquarePanel1.Location = new System.Drawing.Point(34, 16);
+            this.SquarePanel1.Name = "SquarePanel1";
+            this.SquarePanel1.Size = new System.Drawing.Size(243, 110);
+            this.SquarePanel1.TabIndex = 3;
+            // 
+            // WidthInput1
+            // 
+            this.WidthInput1.Location = new System.Drawing.Point(85, 20);
+            this.WidthInput1.Name = "WidthInput1";
+            this.WidthInput1.Size = new System.Drawing.Size(109, 20);
+            this.WidthInput1.TabIndex = 6;
+            // 
+            // HeightInput1
+            // 
+            this.HeightInput1.Location = new System.Drawing.Point(85, 49);
+            this.HeightInput1.Name = "HeightInput1";
+            this.HeightInput1.Size = new System.Drawing.Size(109, 20);
+            this.HeightInput1.TabIndex = 5;
+            // 
+            // height
+            // 
+            this.height.AutoSize = true;
+            this.height.Location = new System.Drawing.Point(25, 52);
+            this.height.Name = "height";
+            this.height.Size = new System.Drawing.Size(54, 13);
+            this.height.TabIndex = 3;
+            this.height.Text = "HEIGHT :";
+            // 
+            // width1
+            // 
+            this.width1.AutoSize = true;
+            this.width1.Location = new System.Drawing.Point(25, 23);
+            this.width1.Name = "width1";
+            this.width1.Size = new System.Drawing.Size(50, 13);
+            this.width1.TabIndex = 2;
+            this.width1.Text = "WIDTH :";
             // 
             // Square1Button
             // 
@@ -83,6 +182,7 @@ namespace ShapeCalculationApp
             this.Square1Button.TabIndex = 3;
             this.Square1Button.Text = "SQUARE";
             this.Square1Button.UseVisualStyleBackColor = true;
+            this.Square1Button.Click += new System.EventHandler(this.Square1Button_Click);
             // 
             // Circle1Button
             // 
@@ -122,31 +222,100 @@ namespace ShapeCalculationApp
             this.Circle2Button.Text = "CIRCLE";
             this.Circle2Button.UseVisualStyleBackColor = true;
             // 
-            // Triangle2Button
-            // 
-            this.Triangle2Button.Location = new System.Drawing.Point(493, 66);
-            this.Triangle2Button.Name = "Triangle2Button";
-            this.Triangle2Button.Size = new System.Drawing.Size(74, 28);
-            this.Triangle2Button.TabIndex = 9;
-            this.Triangle2Button.Text = "TRIANGLE";
-            this.Triangle2Button.UseVisualStyleBackColor = true;
-            // 
-            // Square2Button
-            // 
-            this.Square2Button.Location = new System.Drawing.Point(413, 66);
-            this.Square2Button.Name = "Square2Button";
-            this.Square2Button.Size = new System.Drawing.Size(74, 28);
-            this.Square2Button.TabIndex = 8;
-            this.Square2Button.Text = "SQUARE";
-            this.Square2Button.UseVisualStyleBackColor = true;
-            // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.panel3);
+            this.panel2.Controls.Add(this.TrianglePanel2);
+            this.panel2.Controls.Add(this.SquarePanel2);
             this.panel2.Location = new System.Drawing.Point(413, 100);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(319, 288);
             this.panel2.TabIndex = 7;
+            // 
+            // SquarePanel2
+            // 
+            this.SquarePanel2.Controls.Add(this.HeightInput2);
+            this.SquarePanel2.Controls.Add(this.WidthInput2);
+            this.SquarePanel2.Controls.Add(this.height2);
+            this.SquarePanel2.Controls.Add(this.width2);
+            this.SquarePanel2.Location = new System.Drawing.Point(36, 16);
+            this.SquarePanel2.Name = "SquarePanel2";
+            this.SquarePanel2.Size = new System.Drawing.Size(243, 110);
+            this.SquarePanel2.TabIndex = 2;
+            // 
+            // TrianglePanel2
+            // 
+            this.TrianglePanel2.Controls.Add(this.TriangleHeight2);
+            this.TrianglePanel2.Controls.Add(this.TriangleBase2);
+            this.TrianglePanel2.Controls.Add(this.label1);
+            this.TrianglePanel2.Controls.Add(this.label2);
+            this.TrianglePanel2.Location = new System.Drawing.Point(36, 16);
+            this.TrianglePanel2.Name = "TrianglePanel2";
+            this.TrianglePanel2.Size = new System.Drawing.Size(243, 110);
+            this.TrianglePanel2.TabIndex = 4;
+            // 
+            // TriangleHeight2
+            // 
+            this.TriangleHeight2.Location = new System.Drawing.Point(80, 49);
+            this.TriangleHeight2.Name = "TriangleHeight2";
+            this.TriangleHeight2.Size = new System.Drawing.Size(109, 20);
+            this.TriangleHeight2.TabIndex = 3;
+            // 
+            // TriangleBase2
+            // 
+            this.TriangleBase2.Location = new System.Drawing.Point(80, 20);
+            this.TriangleBase2.Name = "TriangleBase2";
+            this.TriangleBase2.Size = new System.Drawing.Size(109, 20);
+            this.TriangleBase2.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(20, 52);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(54, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "HEIGHT :";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(20, 23);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(41, 13);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "BASE :";
+            // 
+            // HeightInput2
+            // 
+            this.HeightInput2.Location = new System.Drawing.Point(80, 49);
+            this.HeightInput2.Name = "HeightInput2";
+            this.HeightInput2.Size = new System.Drawing.Size(109, 20);
+            this.HeightInput2.TabIndex = 3;
+            // 
+            // WidthInput2
+            // 
+            this.WidthInput2.Location = new System.Drawing.Point(80, 20);
+            this.WidthInput2.Name = "WidthInput2";
+            this.WidthInput2.Size = new System.Drawing.Size(109, 20);
+            this.WidthInput2.TabIndex = 2;
+            // 
+            // height2
+            // 
+            this.height2.AutoSize = true;
+            this.height2.Location = new System.Drawing.Point(20, 52);
+            this.height2.Name = "height2";
+            this.height2.Size = new System.Drawing.Size(54, 13);
+            this.height2.TabIndex = 1;
+            this.height2.Text = "HEIGHT :";
+            // 
+            // width2
+            // 
+            this.width2.AutoSize = true;
+            this.width2.Location = new System.Drawing.Point(20, 23);
+            this.width2.Name = "width2";
+            this.width2.Size = new System.Drawing.Size(50, 13);
+            this.width2.TabIndex = 0;
+            this.width2.Text = "WIDTH :";
             // 
             // CalculateButton
             // 
@@ -166,106 +335,41 @@ namespace ShapeCalculationApp
             this.Triangle1Button.TabIndex = 13;
             this.Triangle1Button.Text = "TRIANGLE";
             this.Triangle1Button.UseVisualStyleBackColor = true;
+            this.Triangle1Button.Click += new System.EventHandler(this.Triangle1Button_Click);
             // 
-            // panel3
+            // Triangle2Button
             // 
-            this.panel3.Controls.Add(this.HeightInput2);
-            this.panel3.Controls.Add(this.WidthInput2);
-            this.panel3.Controls.Add(this.height2);
-            this.panel3.Controls.Add(this.width2);
-            this.panel3.Location = new System.Drawing.Point(36, 16);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(243, 110);
-            this.panel3.TabIndex = 2;
+            this.Triangle2Button.Location = new System.Drawing.Point(493, 66);
+            this.Triangle2Button.Name = "Triangle2Button";
+            this.Triangle2Button.Size = new System.Drawing.Size(74, 28);
+            this.Triangle2Button.TabIndex = 15;
+            this.Triangle2Button.Text = "TRIANGLE";
+            this.Triangle2Button.UseVisualStyleBackColor = true;
+            this.Triangle2Button.Click += new System.EventHandler(this.Triangle2Button_Click);
             // 
-            // panel4
+            // Square2Button
             // 
-            this.panel4.Controls.Add(this.WidthInput1);
-            this.panel4.Controls.Add(this.HeightInput1);
-            this.panel4.Controls.Add(this.height);
-            this.panel4.Controls.Add(this.width1);
-            this.panel4.Location = new System.Drawing.Point(34, 16);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(243, 110);
-            this.panel4.TabIndex = 3;
-            // 
-            // width2
-            // 
-            this.width2.AutoSize = true;
-            this.width2.Location = new System.Drawing.Point(20, 23);
-            this.width2.Name = "width2";
-            this.width2.Size = new System.Drawing.Size(50, 13);
-            this.width2.TabIndex = 0;
-            this.width2.Text = "WIDTH :";
-            // 
-            // height2
-            // 
-            this.height2.AutoSize = true;
-            this.height2.Location = new System.Drawing.Point(20, 52);
-            this.height2.Name = "height2";
-            this.height2.Size = new System.Drawing.Size(54, 13);
-            this.height2.TabIndex = 1;
-            this.height2.Text = "HEIGHT :";
-            // 
-            // height
-            // 
-            this.height.AutoSize = true;
-            this.height.Location = new System.Drawing.Point(25, 52);
-            this.height.Name = "height";
-            this.height.Size = new System.Drawing.Size(54, 13);
-            this.height.TabIndex = 3;
-            this.height.Text = "HEIGHT :";
-            // 
-            // width1
-            // 
-            this.width1.AutoSize = true;
-            this.width1.Location = new System.Drawing.Point(25, 23);
-            this.width1.Name = "width1";
-            this.width1.Size = new System.Drawing.Size(50, 13);
-            this.width1.TabIndex = 2;
-            this.width1.Text = "WIDTH :";
-            // 
-            // WidthInput2
-            // 
-            this.WidthInput2.Location = new System.Drawing.Point(80, 20);
-            this.WidthInput2.Name = "WidthInput2";
-            this.WidthInput2.Size = new System.Drawing.Size(109, 20);
-            this.WidthInput2.TabIndex = 2;
-            // 
-            // HeightInput2
-            // 
-            this.HeightInput2.Location = new System.Drawing.Point(80, 49);
-            this.HeightInput2.Name = "HeightInput2";
-            this.HeightInput2.Size = new System.Drawing.Size(109, 20);
-            this.HeightInput2.TabIndex = 3;
-            // 
-            // HeightInput1
-            // 
-            this.HeightInput1.Location = new System.Drawing.Point(85, 49);
-            this.HeightInput1.Name = "HeightInput1";
-            this.HeightInput1.Size = new System.Drawing.Size(109, 20);
-            this.HeightInput1.TabIndex = 5;
-            // 
-            // WidthInput1
-            // 
-            this.WidthInput1.Location = new System.Drawing.Point(85, 20);
-            this.WidthInput1.Name = "WidthInput1";
-            this.WidthInput1.Size = new System.Drawing.Size(109, 20);
-            this.WidthInput1.TabIndex = 6;
+            this.Square2Button.Location = new System.Drawing.Point(413, 66);
+            this.Square2Button.Name = "Square2Button";
+            this.Square2Button.Size = new System.Drawing.Size(74, 28);
+            this.Square2Button.TabIndex = 14;
+            this.Square2Button.Text = "SQUARE";
+            this.Square2Button.UseVisualStyleBackColor = true;
+            this.Square2Button.Click += new System.EventHandler(this.Square2Button_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Triangle2Button);
+            this.Controls.Add(this.Square2Button);
             this.Controls.Add(this.Triangle1Button);
             this.Controls.Add(this.CalculateButton);
             this.Controls.Add(this.Shape2Text);
             this.Controls.Add(this.Shape1);
             this.Controls.Add(this.Circle2Button);
-            this.Controls.Add(this.Triangle2Button);
             this.Controls.Add(this.Circle1Button);
-            this.Controls.Add(this.Square2Button);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.Square1Button);
             this.Controls.Add(this.panel1);
@@ -273,11 +377,15 @@ namespace ShapeCalculationApp
             this.Name = "Form1";
             this.Text = "Shape Calculator App";
             this.panel1.ResumeLayout(false);
+            this.TrianglePanel1.ResumeLayout(false);
+            this.TrianglePanel1.PerformLayout();
+            this.SquarePanel1.ResumeLayout(false);
+            this.SquarePanel1.PerformLayout();
             this.panel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
+            this.SquarePanel2.ResumeLayout(false);
+            this.SquarePanel2.PerformLayout();
+            this.TrianglePanel2.ResumeLayout(false);
+            this.TrianglePanel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -292,13 +400,11 @@ namespace ShapeCalculationApp
         private System.Windows.Forms.Label Shape1;
         private System.Windows.Forms.Label Shape2Text;
         private System.Windows.Forms.Button Circle2Button;
-        private System.Windows.Forms.Button Triangle2Button;
-        private System.Windows.Forms.Button Square2Button;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button CalculateButton;
         private System.Windows.Forms.Button Triangle1Button;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel SquarePanel1;
+        private System.Windows.Forms.Panel SquarePanel2;
         private System.Windows.Forms.Label height;
         private System.Windows.Forms.Label width1;
         private System.Windows.Forms.Label height2;
@@ -307,6 +413,18 @@ namespace ShapeCalculationApp
         public System.Windows.Forms.TextBox HeightInput2;
         public System.Windows.Forms.TextBox WidthInput2;
         public System.Windows.Forms.TextBox WidthInput1;
+        private System.Windows.Forms.Panel TrianglePanel1;
+        public System.Windows.Forms.TextBox TriangleHeight1;
+        public System.Windows.Forms.TextBox TriangleBase1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Panel TrianglePanel2;
+        public System.Windows.Forms.TextBox TriangleHeight2;
+        public System.Windows.Forms.TextBox TriangleBase2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button Triangle2Button;
+        private System.Windows.Forms.Button Square2Button;
     }
 }
 
