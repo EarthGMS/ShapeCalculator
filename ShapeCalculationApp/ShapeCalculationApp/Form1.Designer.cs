@@ -67,6 +67,8 @@ namespace ShapeCalculationApp
             this.Triangle1Button = new System.Windows.Forms.Button();
             this.Triangle2Button = new System.Windows.Forms.Button();
             this.Square2Button = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.SquarePanel1.SuspendLayout();
             this.TrianglePanel1.SuspendLayout();
@@ -75,6 +77,8 @@ namespace ShapeCalculationApp
             this.CirclePanel2.SuspendLayout();
             this.TrianglePanel2.SuspendLayout();
             this.SquarePanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // DescText
@@ -89,6 +93,7 @@ namespace ShapeCalculationApp
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.SquarePanel1);
             this.panel1.Location = new System.Drawing.Point(27, 100);
             this.panel1.Name = "panel1";
@@ -261,6 +266,7 @@ namespace ShapeCalculationApp
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.CirclePanel2);
             this.panel2.Controls.Add(this.TrianglePanel2);
             this.panel2.Controls.Add(this.SquarePanel2);
@@ -421,6 +427,22 @@ namespace ShapeCalculationApp
             this.Square2Button.UseVisualStyleBackColor = true;
             this.Square2Button.Click += new System.EventHandler(this.Square2Button_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(84, 116);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(150, 143);
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(84, 116);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(150, 143);
+            this.pictureBox2.TabIndex = 6;
+            this.pictureBox2.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -454,6 +476,8 @@ namespace ShapeCalculationApp
             this.TrianglePanel2.PerformLayout();
             this.SquarePanel2.ResumeLayout(false);
             this.SquarePanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -499,6 +523,8 @@ namespace ShapeCalculationApp
         private System.Windows.Forms.Panel CirclePanel1;
         public System.Windows.Forms.TextBox CircleRadius1;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
