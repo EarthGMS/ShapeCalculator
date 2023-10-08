@@ -12,8 +12,8 @@ namespace ShapeCalculationApp
 {
     public partial class Form1 : Form
     {
-        public int result1;
-        public int result2;
+        public double result1;
+        public double result2;
 
         //Shape Mode
         public enum ShapeMode1 { Square1, Triangle1, Circle1 }
@@ -45,6 +45,9 @@ namespace ShapeCalculationApp
                 case ShapeMode1.Triangle1:
                     result1 = (int.Parse(TriangleBase1.Text) * int.Parse(TriangleHeight1.Text))/2;
                     break;
+                case ShapeMode1.Circle1:
+                    result1 = (int.Parse(CircleRadius1.Text) * int.Parse(CircleRadius1.Text)) * 22/7;
+                    break;
             }
             switch (Shape2)
             {
@@ -53,6 +56,9 @@ namespace ShapeCalculationApp
                     break;
                 case ShapeMode2.Triangle2:
                     result2 = (int.Parse(TriangleBase2.Text) * int.Parse(TriangleHeight2.Text)) / 2;
+                    break;
+                case ShapeMode2.Circle2:
+                    result2 =  (int.Parse(CircleRadius2.Text) * int.Parse(CircleRadius2.Text)) * 22 / 7;
                     break;
             }
         }
