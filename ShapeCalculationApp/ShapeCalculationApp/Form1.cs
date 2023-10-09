@@ -15,6 +15,9 @@ namespace ShapeCalculationApp
         public double result1;
         public double result2;
 
+        public string ShapeText1;
+        public string ShapeText2;
+
         //Shape Mode
         public enum ShapeMode1 { Square1, Triangle1, Circle1 }
         public enum ShapeMode2 { Square2, Triangle2, Circle2 }
@@ -24,6 +27,8 @@ namespace ShapeCalculationApp
         public Form1()
         {
             InitializeComponent();
+            ShapeChoose1 = ShapeMode1.Triangle1;
+            ShapeChoose2 = ShapeMode2.Triangle2;
         }
 
         private void CalculateButton_Click(object sender, EventArgs e)
@@ -32,6 +37,8 @@ namespace ShapeCalculationApp
             ResultCalculation resultPage = new ResultCalculation();
             resultPage.Area1.Text = result1.ToString();
             resultPage.Area2.Text = result2.ToString();
+            resultPage.TypeText1.Text = ShapeText1;
+            resultPage.TypeText2.Text = ShapeText2;
             resultPage.Show();
         }
 
@@ -41,24 +48,30 @@ namespace ShapeCalculationApp
             {
                 case ShapeMode1.Square1:
                     result1 = int.Parse(WidthInput1.Text) * int.Parse(HeightInput1.Text);
+                    ShapeText1 = "Squre";
                     break;
                 case ShapeMode1.Triangle1:
                     result1 = (int.Parse(TriangleBase1.Text) * int.Parse(TriangleHeight1.Text))/2;
+                    ShapeText1 = "Triangle";
                     break;
                 case ShapeMode1.Circle1:
                     result1 = (int.Parse(CircleRadius1.Text) * int.Parse(CircleRadius1.Text)) * 22/7;
+                    ShapeText1 = "Circle";
                     break;
             }
             switch (Shape2)
             {
                 case ShapeMode2.Square2:
                     result2 = int.Parse(WidthInput2.Text) * int.Parse(HeightInput2.Text);
+                    ShapeText2 = "Squre";
                     break;
                 case ShapeMode2.Triangle2:
                     result2 = (int.Parse(TriangleBase2.Text) * int.Parse(TriangleHeight2.Text)) / 2;
+                    ShapeText2 = "Triangle";
                     break;
                 case ShapeMode2.Circle2:
                     result2 =  (int.Parse(CircleRadius2.Text) * int.Parse(CircleRadius2.Text)) * 22 / 7;
+                    ShapeText2 = "Circle";
                     break;
             }
         }

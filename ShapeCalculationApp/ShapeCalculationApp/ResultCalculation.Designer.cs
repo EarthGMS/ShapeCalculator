@@ -35,6 +35,8 @@ namespace ShapeCalculationApp
             this.BackButton = new System.Windows.Forms.Button();
             this.Area1 = new System.Windows.Forms.Label();
             this.Area2 = new System.Windows.Forms.Label();
+            this.TypeText2 = new System.Windows.Forms.Label();
+            this.TypeText1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -91,11 +93,31 @@ namespace ShapeCalculationApp
             this.Area2.TabIndex = 6;
             this.Area2.Text = "label4";
             // 
+            // TypeText2
+            // 
+            this.TypeText2.AutoSize = true;
+            this.TypeText2.Location = new System.Drawing.Point(563, 126);
+            this.TypeText2.Name = "TypeText2";
+            this.TypeText2.Size = new System.Drawing.Size(37, 13);
+            this.TypeText2.TabIndex = 7;
+            this.TypeText2.Text = "Type :";
+            // 
+            // TypeText1
+            // 
+            this.TypeText1.AutoSize = true;
+            this.TypeText1.Location = new System.Drawing.Point(143, 126);
+            this.TypeText1.Name = "TypeText1";
+            this.TypeText1.Size = new System.Drawing.Size(37, 13);
+            this.TypeText1.TabIndex = 8;
+            this.TypeText1.Text = "Type :";
+            // 
             // ResultCalculation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.TypeText1);
+            this.Controls.Add(this.TypeText2);
             this.Controls.Add(this.Area2);
             this.Controls.Add(this.Area1);
             this.Controls.Add(this.BackButton);
@@ -117,5 +139,7 @@ namespace ShapeCalculationApp
         private System.Windows.Forms.Button BackButton;
         public System.Windows.Forms.Label Area2;
         public System.Windows.Forms.Label Area1;
+        public System.Windows.Forms.Label TypeText2;
+        public System.Windows.Forms.Label TypeText1;
     }
 }
