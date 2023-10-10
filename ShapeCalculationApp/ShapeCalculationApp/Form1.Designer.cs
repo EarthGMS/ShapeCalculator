@@ -67,8 +67,8 @@ namespace ShapeCalculationApp
             this.Triangle1Button = new System.Windows.Forms.Button();
             this.Triangle2Button = new System.Windows.Forms.Button();
             this.Square2Button = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.CurrentMode2 = new System.Windows.Forms.Label();
+            this.CurrentMode1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SquarePanel1.SuspendLayout();
             this.TrianglePanel1.SuspendLayout();
@@ -77,27 +77,26 @@ namespace ShapeCalculationApp
             this.CirclePanel2.SuspendLayout();
             this.TrianglePanel2.SuspendLayout();
             this.SquarePanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // DescText
             // 
             this.DescText.AutoSize = true;
-            this.DescText.Location = new System.Drawing.Point(14, 19);
+            this.DescText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.DescText.Location = new System.Drawing.Point(264, 9);
             this.DescText.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.DescText.Name = "DescText";
-            this.DescText.Size = new System.Drawing.Size(117, 13);
+            this.DescText.Size = new System.Drawing.Size(246, 25);
             this.DescText.TabIndex = 0;
             this.DescText.Text = "SHAPE CALCULATOR";
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Controls.Add(this.CurrentMode1);
             this.panel1.Controls.Add(this.SquarePanel1);
-            this.panel1.Location = new System.Drawing.Point(27, 100);
+            this.panel1.Location = new System.Drawing.Point(26, 162);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(319, 288);
+            this.panel1.Size = new System.Drawing.Size(319, 137);
             this.panel1.TabIndex = 2;
             // 
             // SquarePanel1
@@ -216,7 +215,7 @@ namespace ShapeCalculationApp
             // 
             // Square1Button
             // 
-            this.Square1Button.Location = new System.Drawing.Point(27, 66);
+            this.Square1Button.Location = new System.Drawing.Point(26, 105);
             this.Square1Button.Name = "Square1Button";
             this.Square1Button.Size = new System.Drawing.Size(74, 28);
             this.Square1Button.TabIndex = 3;
@@ -226,7 +225,7 @@ namespace ShapeCalculationApp
             // 
             // Circle1Button
             // 
-            this.Circle1Button.Location = new System.Drawing.Point(187, 66);
+            this.Circle1Button.Location = new System.Drawing.Point(186, 105);
             this.Circle1Button.Name = "Circle1Button";
             this.Circle1Button.Size = new System.Drawing.Size(74, 28);
             this.Circle1Button.TabIndex = 5;
@@ -237,7 +236,7 @@ namespace ShapeCalculationApp
             // Shape1
             // 
             this.Shape1.AutoSize = true;
-            this.Shape1.Location = new System.Drawing.Point(153, 39);
+            this.Shape1.Location = new System.Drawing.Point(156, 76);
             this.Shape1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.Shape1.Name = "Shape1";
             this.Shape1.Size = new System.Drawing.Size(52, 13);
@@ -247,7 +246,7 @@ namespace ShapeCalculationApp
             // Shape2Text
             // 
             this.Shape2Text.AutoSize = true;
-            this.Shape2Text.Location = new System.Drawing.Point(539, 39);
+            this.Shape2Text.Location = new System.Drawing.Point(542, 76);
             this.Shape2Text.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.Shape2Text.Name = "Shape2Text";
             this.Shape2Text.Size = new System.Drawing.Size(52, 13);
@@ -256,7 +255,7 @@ namespace ShapeCalculationApp
             // 
             // Circle2Button
             // 
-            this.Circle2Button.Location = new System.Drawing.Point(573, 66);
+            this.Circle2Button.Location = new System.Drawing.Point(572, 105);
             this.Circle2Button.Name = "Circle2Button";
             this.Circle2Button.Size = new System.Drawing.Size(74, 28);
             this.Circle2Button.TabIndex = 10;
@@ -266,13 +265,13 @@ namespace ShapeCalculationApp
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Controls.Add(this.CurrentMode2);
             this.panel2.Controls.Add(this.CirclePanel2);
             this.panel2.Controls.Add(this.TrianglePanel2);
             this.panel2.Controls.Add(this.SquarePanel2);
-            this.panel2.Location = new System.Drawing.Point(413, 100);
+            this.panel2.Location = new System.Drawing.Point(412, 162);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(319, 288);
+            this.panel2.Size = new System.Drawing.Size(319, 137);
             this.panel2.TabIndex = 7;
             // 
             // CirclePanel2
@@ -389,7 +388,7 @@ namespace ShapeCalculationApp
             // 
             // CalculateButton
             // 
-            this.CalculateButton.Location = new System.Drawing.Point(280, 406);
+            this.CalculateButton.Location = new System.Drawing.Point(269, 334);
             this.CalculateButton.Name = "CalculateButton";
             this.CalculateButton.Size = new System.Drawing.Size(207, 32);
             this.CalculateButton.TabIndex = 12;
@@ -399,7 +398,7 @@ namespace ShapeCalculationApp
             // 
             // Triangle1Button
             // 
-            this.Triangle1Button.Location = new System.Drawing.Point(107, 66);
+            this.Triangle1Button.Location = new System.Drawing.Point(106, 105);
             this.Triangle1Button.Name = "Triangle1Button";
             this.Triangle1Button.Size = new System.Drawing.Size(74, 28);
             this.Triangle1Button.TabIndex = 13;
@@ -409,7 +408,7 @@ namespace ShapeCalculationApp
             // 
             // Triangle2Button
             // 
-            this.Triangle2Button.Location = new System.Drawing.Point(493, 66);
+            this.Triangle2Button.Location = new System.Drawing.Point(492, 105);
             this.Triangle2Button.Name = "Triangle2Button";
             this.Triangle2Button.Size = new System.Drawing.Size(74, 28);
             this.Triangle2Button.TabIndex = 15;
@@ -419,7 +418,7 @@ namespace ShapeCalculationApp
             // 
             // Square2Button
             // 
-            this.Square2Button.Location = new System.Drawing.Point(413, 66);
+            this.Square2Button.Location = new System.Drawing.Point(412, 105);
             this.Square2Button.Name = "Square2Button";
             this.Square2Button.Size = new System.Drawing.Size(74, 28);
             this.Square2Button.TabIndex = 14;
@@ -427,21 +426,25 @@ namespace ShapeCalculationApp
             this.Square2Button.UseVisualStyleBackColor = true;
             this.Square2Button.Click += new System.EventHandler(this.Square2Button_Click);
             // 
-            // pictureBox1
+            // CurrentMode2
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(84, 116);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(150, 143);
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
+            this.CurrentMode2.AutoSize = true;
+            this.CurrentMode2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CurrentMode2.Location = new System.Drawing.Point(64, -3);
+            this.CurrentMode2.Name = "CurrentMode2";
+            this.CurrentMode2.Size = new System.Drawing.Size(117, 20);
+            this.CurrentMode2.TabIndex = 6;
+            this.CurrentMode2.Text = "Mode : Triangle";
             // 
-            // pictureBox2
+            // CurrentMode1
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(84, 116);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(150, 143);
-            this.pictureBox2.TabIndex = 6;
-            this.pictureBox2.TabStop = false;
+            this.CurrentMode1.AutoSize = true;
+            this.CurrentMode1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CurrentMode1.Location = new System.Drawing.Point(64, -3);
+            this.CurrentMode1.Name = "CurrentMode1";
+            this.CurrentMode1.Size = new System.Drawing.Size(117, 20);
+            this.CurrentMode1.TabIndex = 7;
+            this.CurrentMode1.Text = "Mode : Triangle";
             // 
             // Form1
             // 
@@ -463,6 +466,7 @@ namespace ShapeCalculationApp
             this.Name = "Form1";
             this.Text = "Shape Calculator App";
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.SquarePanel1.ResumeLayout(false);
             this.SquarePanel1.PerformLayout();
             this.TrianglePanel1.ResumeLayout(false);
@@ -470,14 +474,13 @@ namespace ShapeCalculationApp
             this.CirclePanel1.ResumeLayout(false);
             this.CirclePanel1.PerformLayout();
             this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.CirclePanel2.ResumeLayout(false);
             this.CirclePanel2.PerformLayout();
             this.TrianglePanel2.ResumeLayout(false);
             this.TrianglePanel2.PerformLayout();
             this.SquarePanel2.ResumeLayout(false);
             this.SquarePanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -523,8 +526,8 @@ namespace ShapeCalculationApp
         private System.Windows.Forms.Panel CirclePanel1;
         public System.Windows.Forms.TextBox CircleRadius1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label CurrentMode2;
+        private System.Windows.Forms.Label CurrentMode1;
     }
 }
 
