@@ -40,6 +40,7 @@ namespace ShapeCalculationApp
             resultPage.TypeText1.Text = ShapeText1;
             resultPage.TypeText2.Text = ShapeText2;
             resultPage.Show();
+            Hide();
         }
 
         public void ShapeModeDefine(ShapeMode1 Shape1, ShapeMode2 Shape2)

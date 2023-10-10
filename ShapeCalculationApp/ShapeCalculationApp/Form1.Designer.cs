@@ -83,7 +83,7 @@ namespace ShapeCalculationApp
             // 
             this.DescText.AutoSize = true;
             this.DescText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.DescText.Location = new System.Drawing.Point(264, 9);
+            this.DescText.Location = new System.Drawing.Point(251, 22);
             this.DescText.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.DescText.Name = "DescText";
             this.DescText.Size = new System.Drawing.Size(246, 25);
@@ -94,7 +94,7 @@ namespace ShapeCalculationApp
             // 
             this.panel1.Controls.Add(this.CurrentMode1);
             this.panel1.Controls.Add(this.SquarePanel1);
-            this.panel1.Location = new System.Drawing.Point(26, 162);
+            this.panel1.Location = new System.Drawing.Point(43, 162);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(319, 137);
             this.panel1.TabIndex = 2;
@@ -215,7 +215,7 @@ namespace ShapeCalculationApp
             // 
             // Square1Button
             // 
-            this.Square1Button.Location = new System.Drawing.Point(26, 105);
+            this.Square1Button.Location = new System.Drawing.Point(79, 109);
             this.Square1Button.Name = "Square1Button";
             this.Square1Button.Size = new System.Drawing.Size(74, 28);
             this.Square1Button.TabIndex = 3;
@@ -225,7 +225,7 @@ namespace ShapeCalculationApp
             // 
             // Circle1Button
             // 
-            this.Circle1Button.Location = new System.Drawing.Point(186, 105);
+            this.Circle1Button.Location = new System.Drawing.Point(239, 109);
             this.Circle1Button.Name = "Circle1Button";
             this.Circle1Button.Size = new System.Drawing.Size(74, 28);
             this.Circle1Button.TabIndex = 5;
@@ -236,7 +236,7 @@ namespace ShapeCalculationApp
             // Shape1
             // 
             this.Shape1.AutoSize = true;
-            this.Shape1.Location = new System.Drawing.Point(156, 76);
+            this.Shape1.Location = new System.Drawing.Point(173, 76);
             this.Shape1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.Shape1.Name = "Shape1";
             this.Shape1.Size = new System.Drawing.Size(52, 13);
@@ -255,7 +255,7 @@ namespace ShapeCalculationApp
             // 
             // Circle2Button
             // 
-            this.Circle2Button.Location = new System.Drawing.Point(572, 105);
+            this.Circle2Button.Location = new System.Drawing.Point(608, 109);
             this.Circle2Button.Name = "Circle2Button";
             this.Circle2Button.Size = new System.Drawing.Size(74, 28);
             this.Circle2Button.TabIndex = 10;
@@ -398,7 +398,7 @@ namespace ShapeCalculationApp
             // 
             // Triangle1Button
             // 
-            this.Triangle1Button.Location = new System.Drawing.Point(106, 105);
+            this.Triangle1Button.Location = new System.Drawing.Point(159, 109);
             this.Triangle1Button.Name = "Triangle1Button";
             this.Triangle1Button.Size = new System.Drawing.Size(74, 28);
             this.Triangle1Button.TabIndex = 13;
@@ -408,7 +408,7 @@ namespace ShapeCalculationApp
             // 
             // Triangle2Button
             // 
-            this.Triangle2Button.Location = new System.Drawing.Point(492, 105);
+            this.Triangle2Button.Location = new System.Drawing.Point(528, 109);
             this.Triangle2Button.Name = "Triangle2Button";
             this.Triangle2Button.Size = new System.Drawing.Size(74, 28);
             this.Triangle2Button.TabIndex = 15;
@@ -418,7 +418,7 @@ namespace ShapeCalculationApp
             // 
             // Square2Button
             // 
-            this.Square2Button.Location = new System.Drawing.Point(412, 105);
+            this.Square2Button.Location = new System.Drawing.Point(448, 109);
             this.Square2Button.Name = "Square2Button";
             this.Square2Button.Size = new System.Drawing.Size(74, 28);
             this.Square2Button.TabIndex = 14;

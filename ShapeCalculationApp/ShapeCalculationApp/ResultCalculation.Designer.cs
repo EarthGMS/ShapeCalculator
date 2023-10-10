@@ -75,6 +75,7 @@ namespace ShapeCalculationApp
             this.BackButton.TabIndex = 3;
             this.BackButton.Text = "BACK";
             this.BackButton.UseVisualStyleBackColor = true;
+            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
             // Area1
             // 
