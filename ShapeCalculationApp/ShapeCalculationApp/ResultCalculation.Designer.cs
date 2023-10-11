@@ -39,6 +39,12 @@ namespace ShapeCalculationApp
             this.TypeText1 = new System.Windows.Forms.Label();
             this.ShapePicture1 = new System.Windows.Forms.PictureBox();
             this.ShapePicture2 = new System.Windows.Forms.PictureBox();
+            this.Triangle2Height = new System.Windows.Forms.Label();
+            this.Triangle2Base = new System.Windows.Forms.Label();
+            this.Triangle2SideLength = new System.Windows.Forms.Label();
+            this.Triangle1Height = new System.Windows.Forms.Label();
+            this.Triangle1SideLength = new System.Windows.Forms.Label();
+            this.Triangle1Base = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ShapePicture1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ShapePicture2)).BeginInit();
             this.SuspendLayout();
@@ -135,11 +141,83 @@ namespace ShapeCalculationApp
             this.ShapePicture2.TabIndex = 9;
             this.ShapePicture2.TabStop = false;
             // 
+            // Triangle2Height
+            // 
+            this.Triangle2Height.AutoSize = true;
+            this.Triangle2Height.BackColor = System.Drawing.SystemColors.Menu;
+            this.Triangle2Height.Location = new System.Drawing.Point(563, 291);
+            this.Triangle2Height.Name = "Triangle2Height";
+            this.Triangle2Height.Size = new System.Drawing.Size(35, 13);
+            this.Triangle2Height.TabIndex = 11;
+            this.Triangle2Height.Text = "label4";
+            this.Triangle2Height.Visible = false;
+            // 
+            // Triangle2Base
+            // 
+            this.Triangle2Base.AutoSize = true;
+            this.Triangle2Base.BackColor = System.Drawing.SystemColors.Menu;
+            this.Triangle2Base.Location = new System.Drawing.Point(565, 366);
+            this.Triangle2Base.Name = "Triangle2Base";
+            this.Triangle2Base.Size = new System.Drawing.Size(35, 13);
+            this.Triangle2Base.TabIndex = 12;
+            this.Triangle2Base.Text = "label4";
+            this.Triangle2Base.Visible = false;
+            // 
+            // Triangle2SideLength
+            // 
+            this.Triangle2SideLength.AutoSize = true;
+            this.Triangle2SideLength.BackColor = System.Drawing.SystemColors.Menu;
+            this.Triangle2SideLength.Location = new System.Drawing.Point(638, 261);
+            this.Triangle2SideLength.Name = "Triangle2SideLength";
+            this.Triangle2SideLength.Size = new System.Drawing.Size(35, 13);
+            this.Triangle2SideLength.TabIndex = 13;
+            this.Triangle2SideLength.Text = "label4";
+            this.Triangle2SideLength.Visible = false;
+            // 
+            // Triangle1Height
+            // 
+            this.Triangle1Height.AutoSize = true;
+            this.Triangle1Height.BackColor = System.Drawing.SystemColors.Menu;
+            this.Triangle1Height.Location = new System.Drawing.Point(145, 291);
+            this.Triangle1Height.Name = "Triangle1Height";
+            this.Triangle1Height.Size = new System.Drawing.Size(35, 13);
+            this.Triangle1Height.TabIndex = 14;
+            this.Triangle1Height.Text = "label4";
+            this.Triangle1Height.Visible = false;
+            // 
+            // Triangle1SideLength
+            // 
+            this.Triangle1SideLength.AutoSize = true;
+            this.Triangle1SideLength.BackColor = System.Drawing.SystemColors.Menu;
+            this.Triangle1SideLength.Location = new System.Drawing.Point(221, 261);
+            this.Triangle1SideLength.Name = "Triangle1SideLength";
+            this.Triangle1SideLength.Size = new System.Drawing.Size(35, 13);
+            this.Triangle1SideLength.TabIndex = 15;
+            this.Triangle1SideLength.Text = "label4";
+            this.Triangle1SideLength.Visible = false;
+            // 
+            // Triangle1Base
+            // 
+            this.Triangle1Base.AutoSize = true;
+            this.Triangle1Base.BackColor = System.Drawing.SystemColors.Menu;
+            this.Triangle1Base.Location = new System.Drawing.Point(145, 366);
+            this.Triangle1Base.Name = "Triangle1Base";
+            this.Triangle1Base.Size = new System.Drawing.Size(35, 13);
+            this.Triangle1Base.TabIndex = 16;
+            this.Triangle1Base.Text = "label4";
+            this.Triangle1Base.Visible = false;
+            // 
             // ResultCalculation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Triangle1Base);
+            this.Controls.Add(this.Triangle1SideLength);
+            this.Controls.Add(this.Triangle1Height);
+            this.Controls.Add(this.Triangle2SideLength);
+            this.Controls.Add(this.Triangle2Base);
+            this.Controls.Add(this.Triangle2Height);
             this.Controls.Add(this.ShapePicture1);
             this.Controls.Add(this.ShapePicture2);
             this.Controls.Add(this.TypeText1);
@@ -171,5 +249,11 @@ namespace ShapeCalculationApp
         public System.Windows.Forms.Label TypeText1;
         public System.Windows.Forms.PictureBox ShapePicture2;
         public System.Windows.Forms.PictureBox ShapePicture1;
+        private System.Windows.Forms.Label Triangle2Height;
+        private System.Windows.Forms.Label Triangle2Base;
+        private System.Windows.Forms.Label Triangle2SideLength;
+        private System.Windows.Forms.Label Triangle1Height;
+        private System.Windows.Forms.Label Triangle1SideLength;
+        private System.Windows.Forms.Label Triangle1Base;
     }
 }
