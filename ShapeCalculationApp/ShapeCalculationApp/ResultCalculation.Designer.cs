@@ -37,6 +37,10 @@ namespace ShapeCalculationApp
             this.Area2 = new System.Windows.Forms.Label();
             this.TypeText2 = new System.Windows.Forms.Label();
             this.TypeText1 = new System.Windows.Forms.Label();
+            this.ShapePicture1 = new System.Windows.Forms.PictureBox();
+            this.ShapePicture2 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.ShapePicture1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ShapePicture2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -80,7 +84,7 @@ namespace ShapeCalculationApp
             // Area1
             // 
             this.Area1.AutoSize = true;
-            this.Area1.Location = new System.Drawing.Point(143, 189);
+            this.Area1.Location = new System.Drawing.Point(145, 154);
             this.Area1.Name = "Area1";
             this.Area1.Size = new System.Drawing.Size(35, 13);
             this.Area1.TabIndex = 5;
@@ -89,7 +93,7 @@ namespace ShapeCalculationApp
             // Area2
             // 
             this.Area2.AutoSize = true;
-            this.Area2.Location = new System.Drawing.Point(563, 189);
+            this.Area2.Location = new System.Drawing.Point(565, 154);
             this.Area2.Name = "Area2";
             this.Area2.Size = new System.Drawing.Size(35, 13);
             this.Area2.TabIndex = 6;
@@ -113,11 +117,31 @@ namespace ShapeCalculationApp
             this.TypeText1.TabIndex = 8;
             this.TypeText1.Text = "Type :";
             // 
+            // ShapePicture1
+            // 
+            this.ShapePicture1.Image = global::ShapeCalculationApp.Properties.Resources.triangle;
+            this.ShapePicture1.Location = new System.Drawing.Point(86, 193);
+            this.ShapePicture1.Name = "ShapePicture1";
+            this.ShapePicture1.Size = new System.Drawing.Size(170, 170);
+            this.ShapePicture1.TabIndex = 10;
+            this.ShapePicture1.TabStop = false;
+            // 
+            // ShapePicture2
+            // 
+            this.ShapePicture2.Image = global::ShapeCalculationApp.Properties.Resources.triangle;
+            this.ShapePicture2.Location = new System.Drawing.Point(503, 193);
+            this.ShapePicture2.Name = "ShapePicture2";
+            this.ShapePicture2.Size = new System.Drawing.Size(170, 170);
+            this.ShapePicture2.TabIndex = 9;
+            this.ShapePicture2.TabStop = false;
+            // 
             // ResultCalculation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.ShapePicture1);
+            this.Controls.Add(this.ShapePicture2);
             this.Controls.Add(this.TypeText1);
             this.Controls.Add(this.TypeText2);
             this.Controls.Add(this.Area2);
@@ -128,6 +152,8 @@ namespace ShapeCalculationApp
             this.Controls.Add(this.label1);
             this.Name = "ResultCalculation";
             this.Text = "ResultCalculation";
+            ((System.ComponentModel.ISupportInitialize)(this.ShapePicture1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ShapePicture2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -143,5 +169,7 @@ namespace ShapeCalculationApp
         public System.Windows.Forms.Label Area1;
         public System.Windows.Forms.Label TypeText2;
         public System.Windows.Forms.Label TypeText1;
+        public System.Windows.Forms.PictureBox ShapePicture2;
+        public System.Windows.Forms.PictureBox ShapePicture1;
     }
 }
