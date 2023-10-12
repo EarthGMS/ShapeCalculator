@@ -249,11 +249,11 @@ namespace ShapeCalculationApp
         public System.Windows.Forms.Label TypeText1;
         public System.Windows.Forms.PictureBox ShapePicture2;
         public System.Windows.Forms.PictureBox ShapePicture1;
-        private System.Windows.Forms.Label Triangle2Height;
-        private System.Windows.Forms.Label Triangle2Base;
-        private System.Windows.Forms.Label Triangle2SideLength;
-        private System.Windows.Forms.Label Triangle1Height;
-        private System.Windows.Forms.Label Triangle1SideLength;
-        private System.Windows.Forms.Label Triangle1Base;
+        public System.Windows.Forms.Label Triangle2Height;
+        public System.Windows.Forms.Label Triangle2Base;
+        public System.Windows.Forms.Label Triangle2SideLength;
+        public System.Windows.Forms.Label Triangle1Height;
+        public System.Windows.Forms.Label Triangle1SideLength;
+        public System.Windows.Forms.Label Triangle1Base;
     }
 }

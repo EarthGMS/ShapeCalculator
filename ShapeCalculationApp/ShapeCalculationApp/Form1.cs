@@ -18,7 +18,7 @@ namespace ShapeCalculationApp
         public string ShapeText1;
         public string ShapeText2;
         public ResultCalculation resultPage;
-
+        PictureCalculation CalculationFormula;
 
         //Shape Mode
         public enum ShapeMode1 { Square1, Triangle1, Circle1 }
@@ -41,7 +41,6 @@ namespace ShapeCalculationApp
             resultPage.Area2.Text = "Area result : " + result2.ToString();
             resultPage.TypeText1.Text = ShapeText1;
             resultPage.TypeText2.Text = ShapeText2;
-
             resultPage.Show();
         }
 
@@ -58,6 +57,7 @@ namespace ShapeCalculationApp
                     result1 = (int.Parse(TriangleBase1.Text) * int.Parse(TriangleHeight1.Text))/2;
                     ShapeText1 = "Triangle";
                     resultPage.ShapePicture1.Image = Properties.Resources.triangle;
+                    CalculateTriangle1(int.Parse(TriangleBase1.Text), int.Parse(TriangleHeight1.Text));
                     break;
                 case ShapeMode1.Circle1:
                     result1 = (int.Parse(CircleRadius1.Text) * int.Parse(CircleRadius1.Text)) * 22/7;
@@ -138,6 +138,15 @@ namespace ShapeCalculationApp
             CirclePanel1.Visible = true;
             ShapeChoose1 = ShapeMode1.Circle1;
             CurrentMode1.Text = "Mode : Circle";
+        }
+
+        public void CalculateTriangle1(double Base, double Height)
+        {
+            resultPage.Triangle1Base.Visible = true;
+            resultPage.Triangle1Height.Visible = true;
+            resultPage.Triangle1SideLength.Visible = true;
+            double SideLength = Math.Round(Math.Sqrt(Math.Pow(Base/2, 2) + Math.Pow(Height,2)));
+            resultPage.Triangle1SideLength.Text = "Side Length : " + SideLength.ToString();
         }
     }
 }
