@@ -29,6 +29,7 @@ namespace ShapeCalculationApp
         public Form1()
         {
             resultPage = new ResultCalculation();
+            CalculationFormula = new PictureCalculation();
             InitializeComponent();
             ShapeChoose1 = ShapeMode1.Triangle1;
             ShapeChoose2 = ShapeMode2.Triangle2;
@@ -54,10 +55,14 @@ namespace ShapeCalculationApp
                     resultPage.ShapePicture1.Image = Properties.Resources.square;
                     break;
                 case ShapeMode1.Triangle1:
+                    resultPage.Triangle1Base.Visible = true;
+                    resultPage.Triangle1Height.Visible = true;
+                    resultPage.Triangle1SideLength.Visible = true;
+                    double SideLength = Math.Sqrt(Math.Pow(int.Parse(TriangleBase1.Text) / 2, 2) + Math.Pow(int.Parse(TriangleHeight1.Text), 2));
+                    resultPage.Triangle1SideLength.Text = "Side Length : " + SideLength.ToString();
                     result1 = (int.Parse(TriangleBase1.Text) * int.Parse(TriangleHeight1.Text))/2;
                     ShapeText1 = "Triangle";
                     resultPage.ShapePicture1.Image = Properties.Resources.triangle;
-                    CalculateTriangle1(int.Parse(TriangleBase1.Text), int.Parse(TriangleHeight1.Text));
                     break;
                 case ShapeMode1.Circle1:
                     result1 = (int.Parse(CircleRadius1.Text) * int.Parse(CircleRadius1.Text)) * 22/7;
@@ -139,7 +144,7 @@ namespace ShapeCalculationApp
             ShapeChoose1 = ShapeMode1.Circle1;
             CurrentMode1.Text = "Mode : Circle";
         }
-
+        /*
         public void CalculateTriangle1(double Base, double Height)
         {
             resultPage.Triangle1Base.Visible = true;
@@ -148,5 +153,6 @@ namespace ShapeCalculationApp
             double SideLength = Math.Round(Math.Sqrt(Math.Pow(Base/2, 2) + Math.Pow(Height,2)));
             resultPage.Triangle1SideLength.Text = "Side Length : " + SideLength.ToString();
         }
+        */
     }
 }

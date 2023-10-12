@@ -9,15 +9,15 @@ namespace ShapeCalculationApp
     class PictureCalculation
     {
         public ResultCalculation resultPage;
-
         //Shape 1
-        public void CalculateTriangle1(/*double Base, double Height*/)
+        public void CalculateTriangle1(double Base, double Height)
         {
+            resultPage = new ResultCalculation();
             resultPage.Triangle1Base.Visible = true;
             resultPage.Triangle1Height.Visible = true;
             resultPage.Triangle1SideLength.Visible = true;
-            //double SideLength = Math.Sqrt(Math.Pow(Base/2, 2) + Math.Pow(Height,2));
-            //resultPage.Triangle1SideLength.Text = "Side Length : " + SideLength.ToString();
+            double SideLength = Math.Sqrt(Math.Pow(Base/2, 2) + Math.Pow(Height,2));
+            resultPage.Triangle1SideLength.Text = "Side Length : " + SideLength.ToString();
         }
         public void CalculateSquare1()
         {
