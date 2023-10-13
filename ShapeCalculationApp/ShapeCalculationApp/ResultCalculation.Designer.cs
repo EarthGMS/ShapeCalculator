@@ -45,6 +45,8 @@ namespace ShapeCalculationApp
             this.Triangle1Height = new System.Windows.Forms.Label();
             this.Triangle1SideLength = new System.Windows.Forms.Label();
             this.Triangle1Base = new System.Windows.Forms.Label();
+            this.Radius2 = new System.Windows.Forms.Label();
+            this.Radius1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ShapePicture1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ShapePicture2)).BeginInit();
             this.SuspendLayout();
@@ -125,7 +127,7 @@ namespace ShapeCalculationApp
             // 
             // ShapePicture1
             // 
-            this.ShapePicture1.Image = global::ShapeCalculationApp.Properties.Resources.triangle;
+            this.ShapePicture1.Image = global::ShapeCalculationApp.Properties.Resources.circle1;
             this.ShapePicture1.Location = new System.Drawing.Point(86, 193);
             this.ShapePicture1.Name = "ShapePicture1";
             this.ShapePicture1.Size = new System.Drawing.Size(170, 170);
@@ -134,7 +136,7 @@ namespace ShapeCalculationApp
             // 
             // ShapePicture2
             // 
-            this.ShapePicture2.Image = global::ShapeCalculationApp.Properties.Resources.triangle;
+            this.ShapePicture2.Image = global::ShapeCalculationApp.Properties.Resources.circle1;
             this.ShapePicture2.Location = new System.Drawing.Point(503, 193);
             this.ShapePicture2.Name = "ShapePicture2";
             this.ShapePicture2.Size = new System.Drawing.Size(170, 170);
@@ -207,11 +209,35 @@ namespace ShapeCalculationApp
             this.Triangle1Base.Text = "label4";
             this.Triangle1Base.Visible = false;
             // 
+            // Radius2
+            // 
+            this.Radius2.AutoSize = true;
+            this.Radius2.BackColor = System.Drawing.SystemColors.Menu;
+            this.Radius2.Location = new System.Drawing.Point(604, 291);
+            this.Radius2.Name = "Radius2";
+            this.Radius2.Size = new System.Drawing.Size(35, 13);
+            this.Radius2.TabIndex = 17;
+            this.Radius2.Text = "label4";
+            this.Radius2.Visible = false;
+            // 
+            // Radius1
+            // 
+            this.Radius1.AutoSize = true;
+            this.Radius1.BackColor = System.Drawing.SystemColors.Menu;
+            this.Radius1.Location = new System.Drawing.Point(186, 291);
+            this.Radius1.Name = "Radius1";
+            this.Radius1.Size = new System.Drawing.Size(35, 13);
+            this.Radius1.TabIndex = 18;
+            this.Radius1.Text = "label4";
+            this.Radius1.Visible = false;
+            // 
             // ResultCalculation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Radius1);
+            this.Controls.Add(this.Radius2);
             this.Controls.Add(this.Triangle1Base);
             this.Controls.Add(this.Triangle1SideLength);
             this.Controls.Add(this.Triangle1Height);
@@ -255,5 +281,7 @@ namespace ShapeCalculationApp
         public System.Windows.Forms.Label Triangle1Height;
         public System.Windows.Forms.Label Triangle1SideLength;
         public System.Windows.Forms.Label Triangle1Base;
+        public System.Windows.Forms.Label Radius2;
+        public System.Windows.Forms.Label Radius1;
     }
 }

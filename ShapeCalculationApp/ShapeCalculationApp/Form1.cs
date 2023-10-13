@@ -58,13 +58,17 @@ namespace ShapeCalculationApp
                     resultPage.Triangle1Base.Visible = true;
                     resultPage.Triangle1Height.Visible = true;
                     resultPage.Triangle1SideLength.Visible = true;
-                    double SideLength = Math.Sqrt(Math.Pow(int.Parse(TriangleBase1.Text) / 2, 2) + Math.Pow(int.Parse(TriangleHeight1.Text), 2));
+                    double SideLength = Math.Round(Math.Sqrt(Math.Pow(int.Parse(TriangleBase1.Text) / 2, 2) + Math.Pow(int.Parse(TriangleHeight1.Text), 2)));
                     resultPage.Triangle1SideLength.Text = "Side Length : " + SideLength.ToString();
+                    resultPage.Triangle1Height.Text = "Height : " + TriangleHeight1.Text;
+                    resultPage.Triangle1Base.Text = "Base : " + TriangleBase1.Text;
                     result1 = (int.Parse(TriangleBase1.Text) * int.Parse(TriangleHeight1.Text))/2;
                     ShapeText1 = "Triangle";
                     resultPage.ShapePicture1.Image = Properties.Resources.triangle;
                     break;
                 case ShapeMode1.Circle1:
+                    resultPage.Radius1.Visible = true;
+                    resultPage.Radius1.Text = "Radius : " + CircleRadius1.Text;
                     result1 = (int.Parse(CircleRadius1.Text) * int.Parse(CircleRadius1.Text)) * 22/7;
                     ShapeText1 = "Circle";
                     resultPage.ShapePicture1.Image = Properties.Resources.circle1;
@@ -78,14 +82,23 @@ namespace ShapeCalculationApp
                     resultPage.ShapePicture2.Image = Properties.Resources.square;
                     break;
                 case ShapeMode2.Triangle2:
+                    resultPage.Triangle2Base.Visible = true;
+                    resultPage.Triangle2Height.Visible = true;
+                    resultPage.Triangle2SideLength.Visible = true;
+                    double SideLength = Math.Round(Math.Sqrt(Math.Pow(int.Parse(TriangleBase2.Text) / 2, 2) + Math.Pow(int.Parse(TriangleHeight2.Text), 2)));
+                    resultPage.Triangle2SideLength.Text = "Side Length : " + SideLength.ToString();
+                    resultPage.Triangle2Height.Text = "Height : " + TriangleHeight2.Text;
+                    resultPage.Triangle2Base.Text = "Base : "+TriangleBase2.Text;
                     result2 = (int.Parse(TriangleBase2.Text) * int.Parse(TriangleHeight2.Text)) / 2;
                     ShapeText2 = "Triangle";
-                    resultPage.ShapePicture1.Image = Properties.Resources.triangle;
+                    resultPage.ShapePicture2.Image = Properties.Resources.triangle;
                     break;
                 case ShapeMode2.Circle2:
+                    resultPage.Radius2.Visible = true;
+                    resultPage.Radius2.Text = "Radius : " + CircleRadius2.Text;
                     result2 =  (int.Parse(CircleRadius2.Text) * int.Parse(CircleRadius2.Text)) * 22 / 7;
                     ShapeText2 = "Circle";
-                    resultPage.ShapePicture1.Image = Properties.Resources.circle1;
+                    resultPage.ShapePicture2.Image = Properties.Resources.circle1;
                     break;
             }
         }
@@ -144,15 +157,5 @@ namespace ShapeCalculationApp
             ShapeChoose1 = ShapeMode1.Circle1;
             CurrentMode1.Text = "Mode : Circle";
         }
-        /*
-        public void CalculateTriangle1(double Base, double Height)
-        {
-            resultPage.Triangle1Base.Visible = true;
-            resultPage.Triangle1Height.Visible = true;
-            resultPage.Triangle1SideLength.Visible = true;
-            double SideLength = Math.Round(Math.Sqrt(Math.Pow(Base/2, 2) + Math.Pow(Height,2)));
-            resultPage.Triangle1SideLength.Text = "Side Length : " + SideLength.ToString();
-        }
-        */
     }
 }
