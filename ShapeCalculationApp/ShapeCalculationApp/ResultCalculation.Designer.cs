@@ -47,6 +47,8 @@ namespace ShapeCalculationApp
             this.Triangle1Base = new System.Windows.Forms.Label();
             this.Radius2 = new System.Windows.Forms.Label();
             this.Radius1 = new System.Windows.Forms.Label();
+            this.Circle1Circumference = new System.Windows.Forms.Label();
+            this.Circle2Circumference = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ShapePicture1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ShapePicture2)).BeginInit();
             this.SuspendLayout();
@@ -231,11 +233,35 @@ namespace ShapeCalculationApp
             this.Radius1.Text = "label4";
             this.Radius1.Visible = false;
             // 
+            // Circle1Circumference
+            // 
+            this.Circle1Circumference.AutoSize = true;
+            this.Circle1Circumference.BackColor = System.Drawing.SystemColors.Menu;
+            this.Circle1Circumference.Location = new System.Drawing.Point(239, 205);
+            this.Circle1Circumference.Name = "Circle1Circumference";
+            this.Circle1Circumference.Size = new System.Drawing.Size(35, 13);
+            this.Circle1Circumference.TabIndex = 19;
+            this.Circle1Circumference.Text = "label4";
+            this.Circle1Circumference.Visible = false;
+            // 
+            // Circle2Circumference
+            // 
+            this.Circle2Circumference.AutoSize = true;
+            this.Circle2Circumference.BackColor = System.Drawing.SystemColors.Menu;
+            this.Circle2Circumference.Location = new System.Drawing.Point(662, 205);
+            this.Circle2Circumference.Name = "Circle2Circumference";
+            this.Circle2Circumference.Size = new System.Drawing.Size(35, 13);
+            this.Circle2Circumference.TabIndex = 20;
+            this.Circle2Circumference.Text = "label4";
+            this.Circle2Circumference.Visible = false;
+            // 
             // ResultCalculation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Circle2Circumference);
+            this.Controls.Add(this.Circle1Circumference);
             this.Controls.Add(this.Radius1);
             this.Controls.Add(this.Radius2);
             this.Controls.Add(this.Triangle1Base);
@@ -283,5 +309,7 @@ namespace ShapeCalculationApp
         public System.Windows.Forms.Label Triangle1Base;
         public System.Windows.Forms.Label Radius2;
         public System.Windows.Forms.Label Radius1;
+        public System.Windows.Forms.Label Circle1Circumference;
+        public System.Windows.Forms.Label Circle2Circumference;
     }
 }

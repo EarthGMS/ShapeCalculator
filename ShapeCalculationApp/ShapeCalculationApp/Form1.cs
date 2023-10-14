@@ -54,6 +54,7 @@ namespace ShapeCalculationApp
                     ShapeText1 = "Squre";
                     resultPage.ShapePicture1.Image = Properties.Resources.square;
                     break;
+
                 case ShapeMode1.Triangle1:
                     resultPage.Triangle1Base.Visible = true;
                     resultPage.Triangle1Height.Visible = true;
@@ -66,9 +67,12 @@ namespace ShapeCalculationApp
                     ShapeText1 = "Triangle";
                     resultPage.ShapePicture1.Image = Properties.Resources.triangle;
                     break;
+
                 case ShapeMode1.Circle1:
                     resultPage.Radius1.Visible = true;
                     resultPage.Radius1.Text = "Radius : " + CircleRadius1.Text;
+                    resultPage.Circle1Circumference.Visible = true;
+                    resultPage.Circle1Circumference.Text = "Circumference : " + (2 * int.Parse(CircleRadius1.Text) * 22 / 7);
                     result1 = (int.Parse(CircleRadius1.Text) * int.Parse(CircleRadius1.Text)) * 22/7;
                     ShapeText1 = "Circle";
                     resultPage.ShapePicture1.Image = Properties.Resources.circle1;
@@ -81,6 +85,7 @@ namespace ShapeCalculationApp
                     ShapeText2 = "Squre";
                     resultPage.ShapePicture2.Image = Properties.Resources.square;
                     break;
+
                 case ShapeMode2.Triangle2:
                     resultPage.Triangle2Base.Visible = true;
                     resultPage.Triangle2Height.Visible = true;
@@ -93,9 +98,12 @@ namespace ShapeCalculationApp
                     ShapeText2 = "Triangle";
                     resultPage.ShapePicture2.Image = Properties.Resources.triangle;
                     break;
+
                 case ShapeMode2.Circle2:
                     resultPage.Radius2.Visible = true;
                     resultPage.Radius2.Text = "Radius : " + CircleRadius2.Text;
+                    resultPage.Circle2Circumference.Visible = true;
+                    resultPage.Circle2Circumference.Text = "Circumference : " + (2 * int.Parse(CircleRadius2.Text) * 22/7);
                     result2 =  (int.Parse(CircleRadius2.Text) * int.Parse(CircleRadius2.Text)) * 22 / 7;
                     ShapeText2 = "Circle";
                     resultPage.ShapePicture2.Image = Properties.Resources.circle1;
