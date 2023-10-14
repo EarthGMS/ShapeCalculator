@@ -50,6 +50,10 @@ namespace ShapeCalculationApp
             switch (Shape1)
             {
                 case ShapeMode1.Square1:
+                    resultPage.Square1Width.Visible = true;
+                    resultPage.Square1Height.Visible = true;
+                    resultPage.Square1Width.Text = "Width : " + WidthInput1.Text;
+                    resultPage.Square1Height.Text = "Height : " + HeightInput1.Text;
                     result1 = int.Parse(WidthInput1.Text) * int.Parse(HeightInput1.Text);
                     ShapeText1 = "Squre";
                     resultPage.ShapePicture1.Image = Properties.Resources.square;
@@ -81,6 +85,10 @@ namespace ShapeCalculationApp
             switch (Shape2)
             {
                 case ShapeMode2.Square2:
+                    resultPage.Square2Width.Visible = true;
+                    resultPage.Square2Height.Visible = true;
+                    resultPage.Square2Width.Text = "Width : " + WidthInput2.Text;
+                    resultPage.Square2Height.Text = "Height : " + HeightInput2.Text;
                     result2 = int.Parse(WidthInput2.Text) * int.Parse(HeightInput2.Text);
                     ShapeText2 = "Squre";
                     resultPage.ShapePicture2.Image = Properties.Resources.square;

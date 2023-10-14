@@ -49,6 +49,10 @@ namespace ShapeCalculationApp
             this.Radius1 = new System.Windows.Forms.Label();
             this.Circle1Circumference = new System.Windows.Forms.Label();
             this.Circle2Circumference = new System.Windows.Forms.Label();
+            this.Square2Width = new System.Windows.Forms.Label();
+            this.Square2Height = new System.Windows.Forms.Label();
+            this.Square1Width = new System.Windows.Forms.Label();
+            this.Square1Height = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ShapePicture1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ShapePicture2)).BeginInit();
             this.SuspendLayout();
@@ -129,7 +133,7 @@ namespace ShapeCalculationApp
             // 
             // ShapePicture1
             // 
-            this.ShapePicture1.Image = global::ShapeCalculationApp.Properties.Resources.circle1;
+            this.ShapePicture1.Image = global::ShapeCalculationApp.Properties.Resources.square;
             this.ShapePicture1.Location = new System.Drawing.Point(86, 193);
             this.ShapePicture1.Name = "ShapePicture1";
             this.ShapePicture1.Size = new System.Drawing.Size(170, 170);
@@ -138,7 +142,7 @@ namespace ShapeCalculationApp
             // 
             // ShapePicture2
             // 
-            this.ShapePicture2.Image = global::ShapeCalculationApp.Properties.Resources.circle1;
+            this.ShapePicture2.Image = global::ShapeCalculationApp.Properties.Resources.square;
             this.ShapePicture2.Location = new System.Drawing.Point(503, 193);
             this.ShapePicture2.Name = "ShapePicture2";
             this.ShapePicture2.Size = new System.Drawing.Size(170, 170);
@@ -237,7 +241,7 @@ namespace ShapeCalculationApp
             // 
             this.Circle1Circumference.AutoSize = true;
             this.Circle1Circumference.BackColor = System.Drawing.SystemColors.Menu;
-            this.Circle1Circumference.Location = new System.Drawing.Point(239, 205);
+            this.Circle1Circumference.Location = new System.Drawing.Point(262, 274);
             this.Circle1Circumference.Name = "Circle1Circumference";
             this.Circle1Circumference.Size = new System.Drawing.Size(35, 13);
             this.Circle1Circumference.TabIndex = 19;
@@ -248,18 +252,66 @@ namespace ShapeCalculationApp
             // 
             this.Circle2Circumference.AutoSize = true;
             this.Circle2Circumference.BackColor = System.Drawing.SystemColors.Menu;
-            this.Circle2Circumference.Location = new System.Drawing.Point(662, 205);
+            this.Circle2Circumference.Location = new System.Drawing.Point(679, 274);
             this.Circle2Circumference.Name = "Circle2Circumference";
             this.Circle2Circumference.Size = new System.Drawing.Size(35, 13);
             this.Circle2Circumference.TabIndex = 20;
             this.Circle2Circumference.Text = "label4";
             this.Circle2Circumference.Visible = false;
             // 
+            // Square2Width
+            // 
+            this.Square2Width.AutoSize = true;
+            this.Square2Width.BackColor = System.Drawing.SystemColors.Menu;
+            this.Square2Width.Location = new System.Drawing.Point(565, 177);
+            this.Square2Width.Name = "Square2Width";
+            this.Square2Width.Size = new System.Drawing.Size(35, 13);
+            this.Square2Width.TabIndex = 21;
+            this.Square2Width.Text = "label4";
+            this.Square2Width.Visible = false;
+            // 
+            // Square2Height
+            // 
+            this.Square2Height.AutoSize = true;
+            this.Square2Height.BackColor = System.Drawing.SystemColors.Menu;
+            this.Square2Height.Location = new System.Drawing.Point(453, 274);
+            this.Square2Height.Name = "Square2Height";
+            this.Square2Height.Size = new System.Drawing.Size(35, 13);
+            this.Square2Height.TabIndex = 22;
+            this.Square2Height.Text = "label4";
+            this.Square2Height.Visible = false;
+            // 
+            // Square1Width
+            // 
+            this.Square1Width.AutoSize = true;
+            this.Square1Width.BackColor = System.Drawing.SystemColors.Menu;
+            this.Square1Width.Location = new System.Drawing.Point(145, 177);
+            this.Square1Width.Name = "Square1Width";
+            this.Square1Width.Size = new System.Drawing.Size(35, 13);
+            this.Square1Width.TabIndex = 23;
+            this.Square1Width.Text = "label4";
+            this.Square1Width.Visible = false;
+            // 
+            // Square1Height
+            // 
+            this.Square1Height.AutoSize = true;
+            this.Square1Height.BackColor = System.Drawing.SystemColors.Menu;
+            this.Square1Height.Location = new System.Drawing.Point(34, 274);
+            this.Square1Height.Name = "Square1Height";
+            this.Square1Height.Size = new System.Drawing.Size(35, 13);
+            this.Square1Height.TabIndex = 24;
+            this.Square1Height.Text = "label4";
+            this.Square1Height.Visible = false;
+            // 
             // ResultCalculation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Square1Height);
+            this.Controls.Add(this.Square1Width);
+            this.Controls.Add(this.Square2Height);
+            this.Controls.Add(this.Square2Width);
             this.Controls.Add(this.Circle2Circumference);
             this.Controls.Add(this.Circle1Circumference);
             this.Controls.Add(this.Radius1);
@@ -311,5 +363,9 @@ namespace ShapeCalculationApp
         public System.Windows.Forms.Label Radius1;
         public System.Windows.Forms.Label Circle1Circumference;
         public System.Windows.Forms.Label Circle2Circumference;
+        public System.Windows.Forms.Label Square2Width;
+        public System.Windows.Forms.Label Square2Height;
+        public System.Windows.Forms.Label Square1Width;
+        public System.Windows.Forms.Label Square1Height;
     }
 }
