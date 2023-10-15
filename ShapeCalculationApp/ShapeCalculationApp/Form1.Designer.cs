@@ -31,6 +31,7 @@ namespace ShapeCalculationApp
         {
             this.DescText = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.CurrentMode1 = new System.Windows.Forms.Label();
             this.SquarePanel1 = new System.Windows.Forms.Panel();
             this.TrianglePanel1 = new System.Windows.Forms.Panel();
             this.CirclePanel1 = new System.Windows.Forms.Panel();
@@ -50,6 +51,7 @@ namespace ShapeCalculationApp
             this.Shape2Text = new System.Windows.Forms.Label();
             this.Circle2Button = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.CurrentMode2 = new System.Windows.Forms.Label();
             this.CirclePanel2 = new System.Windows.Forms.Panel();
             this.CircleRadius2 = new System.Windows.Forms.TextBox();
             this.RadiusText = new System.Windows.Forms.Label();
@@ -67,8 +69,6 @@ namespace ShapeCalculationApp
             this.Triangle1Button = new System.Windows.Forms.Button();
             this.Triangle2Button = new System.Windows.Forms.Button();
             this.Square2Button = new System.Windows.Forms.Button();
-            this.CurrentMode2 = new System.Windows.Forms.Label();
-            this.CurrentMode1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SquarePanel1.SuspendLayout();
             this.TrianglePanel1.SuspendLayout();
@@ -98,6 +98,16 @@ namespace ShapeCalculationApp
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(319, 137);
             this.panel1.TabIndex = 2;
+            // 
+            // CurrentMode1
+            // 
+            this.CurrentMode1.AutoSize = true;
+            this.CurrentMode1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CurrentMode1.Location = new System.Drawing.Point(64, -3);
+            this.CurrentMode1.Name = "CurrentMode1";
+            this.CurrentMode1.Size = new System.Drawing.Size(117, 20);
+            this.CurrentMode1.TabIndex = 7;
+            this.CurrentMode1.Text = "Mode : Triangle";
             // 
             // SquarePanel1
             // 
@@ -274,6 +284,16 @@ namespace ShapeCalculationApp
             this.panel2.Size = new System.Drawing.Size(319, 137);
             this.panel2.TabIndex = 7;
             // 
+            // CurrentMode2
+            // 
+            this.CurrentMode2.AutoSize = true;
+            this.CurrentMode2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CurrentMode2.Location = new System.Drawing.Point(64, -3);
+            this.CurrentMode2.Name = "CurrentMode2";
+            this.CurrentMode2.Size = new System.Drawing.Size(117, 20);
+            this.CurrentMode2.TabIndex = 6;
+            this.CurrentMode2.Text = "Mode : Triangle";
+            // 
             // CirclePanel2
             // 
             this.CirclePanel2.Controls.Add(this.CircleRadius2);
@@ -290,6 +310,7 @@ namespace ShapeCalculationApp
             this.CircleRadius2.Name = "CircleRadius2";
             this.CircleRadius2.Size = new System.Drawing.Size(109, 20);
             this.CircleRadius2.TabIndex = 2;
+            this.CircleRadius2.TextChanged += new System.EventHandler(this.CircleRadius2_TextChanged);
             // 
             // RadiusText
             // 
@@ -425,26 +446,6 @@ namespace ShapeCalculationApp
             this.Square2Button.Text = "SQUARE";
             this.Square2Button.UseVisualStyleBackColor = true;
             this.Square2Button.Click += new System.EventHandler(this.Square2Button_Click);
-            // 
-            // CurrentMode2
-            // 
-            this.CurrentMode2.AutoSize = true;
-            this.CurrentMode2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CurrentMode2.Location = new System.Drawing.Point(64, -3);
-            this.CurrentMode2.Name = "CurrentMode2";
-            this.CurrentMode2.Size = new System.Drawing.Size(117, 20);
-            this.CurrentMode2.TabIndex = 6;
-            this.CurrentMode2.Text = "Mode : Triangle";
-            // 
-            // CurrentMode1
-            // 
-            this.CurrentMode1.AutoSize = true;
-            this.CurrentMode1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CurrentMode1.Location = new System.Drawing.Point(64, -3);
-            this.CurrentMode1.Name = "CurrentMode1";
-            this.CurrentMode1.Size = new System.Drawing.Size(117, 20);
-            this.CurrentMode1.TabIndex = 7;
-            this.CurrentMode1.Text = "Mode : Triangle";
             // 
             // Form1
             // 

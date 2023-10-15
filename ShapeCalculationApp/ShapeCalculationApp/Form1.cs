@@ -18,7 +18,6 @@ namespace ShapeCalculationApp
         public string ShapeText1;
         public string ShapeText2;
         public ResultCalculation resultPage;
-        PictureCalculation CalculationFormula;
 
         //Shape Mode
         public enum ShapeMode1 { Square1, Triangle1, Circle1 }
@@ -29,7 +28,6 @@ namespace ShapeCalculationApp
         public Form1()
         {
             resultPage = new ResultCalculation();
-            CalculationFormula = new PictureCalculation();
             InitializeComponent();
             ShapeChoose1 = ShapeMode1.Triangle1;
             ShapeChoose2 = ShapeMode2.Triangle2;
@@ -54,7 +52,7 @@ namespace ShapeCalculationApp
                     resultPage.Square1Height.Visible = true;
                     resultPage.Square1Width.Text = "Width : " + WidthInput1.Text;
                     resultPage.Square1Height.Text = "Height : " + HeightInput1.Text;
-                    result1 = int.Parse(WidthInput1.Text) * int.Parse(HeightInput1.Text);
+                    result1 = double.Parse(WidthInput1.Text) * double.Parse(HeightInput1.Text);
                     ShapeText1 = "Squre";
                     resultPage.ShapePicture1.Image = Properties.Resources.square;
                     break;
@@ -63,11 +61,11 @@ namespace ShapeCalculationApp
                     resultPage.Triangle1Base.Visible = true;
                     resultPage.Triangle1Height.Visible = true;
                     resultPage.Triangle1SideLength.Visible = true;
-                    double SideLength = Math.Round(Math.Sqrt(Math.Pow(int.Parse(TriangleBase1.Text) / 2, 2) + Math.Pow(int.Parse(TriangleHeight1.Text), 2)));
+                    double SideLength = Math.Round(Math.Sqrt(Math.Pow(double.Parse(TriangleBase1.Text) / 2, 2) + Math.Pow(double.Parse(TriangleHeight1.Text), 2)),2);
                     resultPage.Triangle1SideLength.Text = "Side Length : " + SideLength.ToString();
                     resultPage.Triangle1Height.Text = "Height : " + TriangleHeight1.Text;
                     resultPage.Triangle1Base.Text = "Base : " + TriangleBase1.Text;
-                    result1 = (int.Parse(TriangleBase1.Text) * int.Parse(TriangleHeight1.Text))/2;
+                    result1 = (double.Parse(TriangleBase1.Text) * double.Parse(TriangleHeight1.Text))/2;
                     ShapeText1 = "Triangle";
                     resultPage.ShapePicture1.Image = Properties.Resources.triangle;
                     break;
@@ -76,8 +74,8 @@ namespace ShapeCalculationApp
                     resultPage.Radius1.Visible = true;
                     resultPage.Radius1.Text = "Radius : " + CircleRadius1.Text;
                     resultPage.Circle1Circumference.Visible = true;
-                    resultPage.Circle1Circumference.Text = "Circumference : " + (2 * int.Parse(CircleRadius1.Text) * 22 / 7);
-                    result1 = (int.Parse(CircleRadius1.Text) * int.Parse(CircleRadius1.Text)) * 22/7;
+                    resultPage.Circle1Circumference.Text = "Circumference : " + (2 * double.Parse(CircleRadius1.Text) * 22 / 7);
+                    result1 = (double.Parse(CircleRadius1.Text) * double.Parse(CircleRadius1.Text)) * 22/7;
                     ShapeText1 = "Circle";
                     resultPage.ShapePicture1.Image = Properties.Resources.circle1;
                     break;
@@ -89,7 +87,7 @@ namespace ShapeCalculationApp
                     resultPage.Square2Height.Visible = true;
                     resultPage.Square2Width.Text = "Width : " + WidthInput2.Text;
                     resultPage.Square2Height.Text = "Height : " + HeightInput2.Text;
-                    result2 = int.Parse(WidthInput2.Text) * int.Parse(HeightInput2.Text);
+                    result2 = double.Parse(WidthInput2.Text) * double.Parse(HeightInput2.Text);
                     ShapeText2 = "Squre";
                     resultPage.ShapePicture2.Image = Properties.Resources.square;
                     break;
@@ -98,11 +96,11 @@ namespace ShapeCalculationApp
                     resultPage.Triangle2Base.Visible = true;
                     resultPage.Triangle2Height.Visible = true;
                     resultPage.Triangle2SideLength.Visible = true;
-                    double SideLength = Math.Round(Math.Sqrt(Math.Pow(int.Parse(TriangleBase2.Text) / 2, 2) + Math.Pow(int.Parse(TriangleHeight2.Text), 2)));
+                    double SideLength = Math.Round(Math.Sqrt(Math.Pow(double.Parse(TriangleBase2.Text) / 2, 2) + Math.Pow(double.Parse(TriangleHeight2.Text), 2)),2);
                     resultPage.Triangle2SideLength.Text = "Side Length : " + SideLength.ToString();
                     resultPage.Triangle2Height.Text = "Height : " + TriangleHeight2.Text;
                     resultPage.Triangle2Base.Text = "Base : "+TriangleBase2.Text;
-                    result2 = (int.Parse(TriangleBase2.Text) * int.Parse(TriangleHeight2.Text)) / 2;
+                    result2 = (double.Parse(TriangleBase2.Text) * double.Parse(TriangleHeight2.Text)) / 2;
                     ShapeText2 = "Triangle";
                     resultPage.ShapePicture2.Image = Properties.Resources.triangle;
                     break;
@@ -111,8 +109,8 @@ namespace ShapeCalculationApp
                     resultPage.Radius2.Visible = true;
                     resultPage.Radius2.Text = "Radius : " + CircleRadius2.Text;
                     resultPage.Circle2Circumference.Visible = true;
-                    resultPage.Circle2Circumference.Text = "Circumference : " + (2 * int.Parse(CircleRadius2.Text) * 22/7);
-                    result2 =  (int.Parse(CircleRadius2.Text) * int.Parse(CircleRadius2.Text)) * 22 / 7;
+                    resultPage.Circle2Circumference.Text = "Circumference : " + (2 * double.Parse(CircleRadius2.Text) * 22/7);
+                    result2 =  (double.Parse(CircleRadius2.Text) * double.Parse(CircleRadius2.Text)) * 22 / 7;
                     ShapeText2 = "Circle";
                     resultPage.ShapePicture2.Image = Properties.Resources.circle1;
                     break;
@@ -172,6 +170,11 @@ namespace ShapeCalculationApp
             CirclePanel1.Visible = true;
             ShapeChoose1 = ShapeMode1.Circle1;
             CurrentMode1.Text = "Mode : Circle";
+        }
+
+        private void CircleRadius2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
