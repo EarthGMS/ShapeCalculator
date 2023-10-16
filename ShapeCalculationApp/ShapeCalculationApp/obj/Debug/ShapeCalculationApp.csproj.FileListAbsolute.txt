@@ -9,3 +9,8 @@ D:\github repo\ShapeCalculator\ShapeCalculationApp\ShapeCalculationApp\obj\Debug
 D:\github repo\ShapeCalculator\ShapeCalculationApp\ShapeCalculationApp\obj\Debug\ShapeCalculationApp.exe
 D:\github repo\ShapeCalculator\ShapeCalculationApp\ShapeCalculationApp\obj\Debug\ShapeCalculationApp.pdb
 D:\github repo\ShapeCalculator\ShapeCalculationApp\ShapeCalculationApp\obj\Debug\ShapeCalculationApp.ResultCalculation.resources
+D:\github repo\ShapeCalculator\ShapeCalculationApp\ShapeCalculationApp\bin\Debug\ShapeCalculationApp.exe.manifest
+D:\github repo\ShapeCalculator\ShapeCalculationApp\ShapeCalculationApp\bin\Debug\ShapeCalculationApp.application
+D:\github repo\ShapeCalculator\ShapeCalculationApp\ShapeCalculationApp\obj\Debug\ShapeCalculationApp.TrustInfo.xml
+D:\github repo\ShapeCalculator\ShapeCalculationApp\ShapeCalculationApp\obj\Debug\ShapeCalculationApp.exe.manifest
+D:\github repo\ShapeCalculator\ShapeCalculationApp\ShapeCalculationApp\obj\Debug\ShapeCalculationApp.application
