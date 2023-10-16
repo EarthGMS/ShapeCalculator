@@ -52,7 +52,7 @@ namespace ShapeCalculationApp
                     resultPage.Square1Height.Visible = true;
                     resultPage.Square1Width.Text = "Width : " + WidthInput1.Text;
                     resultPage.Square1Height.Text = "Height : " + HeightInput1.Text;
-                    result1 = double.Parse(WidthInput1.Text) * double.Parse(HeightInput1.Text);
+                    result1 = Math.Round(double.Parse(WidthInput1.Text) * double.Parse(HeightInput1.Text),2);
                     ShapeText1 = "Squre";
                     resultPage.ShapePicture1.Image = Properties.Resources.square;
                     break;
@@ -74,8 +74,8 @@ namespace ShapeCalculationApp
                     resultPage.Radius1.Visible = true;
                     resultPage.Radius1.Text = "Radius : " + CircleRadius1.Text;
                     resultPage.Circle1Circumference.Visible = true;
-                    resultPage.Circle1Circumference.Text = "Circumference : " + (2 * double.Parse(CircleRadius1.Text) * 22 / 7);
-                    result1 = (double.Parse(CircleRadius1.Text) * double.Parse(CircleRadius1.Text)) * 22/7;
+                    resultPage.Circle1Circumference.Text = "Circumference : " + Math.Round((2 * double.Parse(CircleRadius1.Text) * 22 / 7),2);
+                    result1 = Math.Round((double.Parse(CircleRadius1.Text) * double.Parse(CircleRadius1.Text)) * 22/7,2);
                     ShapeText1 = "Circle";
                     resultPage.ShapePicture1.Image = Properties.Resources.circle1;
                     break;
@@ -87,7 +87,7 @@ namespace ShapeCalculationApp
                     resultPage.Square2Height.Visible = true;
                     resultPage.Square2Width.Text = "Width : " + WidthInput2.Text;
                     resultPage.Square2Height.Text = "Height : " + HeightInput2.Text;
-                    result2 = double.Parse(WidthInput2.Text) * double.Parse(HeightInput2.Text);
+                    result2 = Math.Round(double.Parse(WidthInput2.Text) * double.Parse(HeightInput2.Text),2);
                     ShapeText2 = "Squre";
                     resultPage.ShapePicture2.Image = Properties.Resources.square;
                     break;
@@ -109,8 +109,8 @@ namespace ShapeCalculationApp
                     resultPage.Radius2.Visible = true;
                     resultPage.Radius2.Text = "Radius : " + CircleRadius2.Text;
                     resultPage.Circle2Circumference.Visible = true;
-                    resultPage.Circle2Circumference.Text = "Circumference : " + (2 * double.Parse(CircleRadius2.Text) * 22/7);
-                    result2 =  (double.Parse(CircleRadius2.Text) * double.Parse(CircleRadius2.Text)) * 22 / 7;
+                    resultPage.Circle2Circumference.Text = "Circumference : " + Math.Round((2 * double.Parse(CircleRadius2.Text) * 22/7),2);
+                    result2 = Math.Round((double.Parse(CircleRadius2.Text) * double.Parse(CircleRadius2.Text)) * 22 / 7,2);
                     ShapeText2 = "Circle";
                     resultPage.ShapePicture2.Image = Properties.Resources.circle1;
                     break;
