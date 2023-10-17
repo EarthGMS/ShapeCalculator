@@ -35,6 +35,15 @@ namespace ShapeCalculationApp
 
         private void CalculateButton_Click(object sender, EventArgs e)
         {
+            try
+            {
+                ShapeModeDefine(ShapeChoose1, ShapeChoose2);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             ShapeModeDefine(ShapeChoose1, ShapeChoose2);
             resultPage.Area1.Text = "Area result : " + result1.ToString();
             resultPage.Area2.Text = "Area result : " + result2.ToString();
